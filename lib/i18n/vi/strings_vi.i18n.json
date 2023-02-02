@@ -1,0 +1,52 @@
+{
+  "hello": "Chào $name",
+  "save": "Lưu",
+  "login": {
+    "success": "Đăng nhập thành công",
+    "fail": "Đăng nhập thất bại"
+  },
+  "navigation": {
+    "bottom": {
+      "sample": "Mẫu",
+      "features": "Chức năng",
+      "informations": "Thông tin"
+    }
+  },
+  "test": {
+    "succeded": "Test successfull.",
+    "failed": "Test failed."
+  },
+  "form": {
+    "username": {
+      "label": "Username",
+      "hint": "Vui lòng nhập username"
+    },
+    "password": {
+      "label": "Password",
+      "hint": "Nhập password"
+    }
+  },
+  "errors": {
+    "form": {
+      "maxLength": "$field cannot be more than $count characters.",
+      "minLength": "$field cannot be less than $count characters.",
+      "required": "$field is required.",
+      "email": "You entered an invalid email address."
+    },
+    "others": {
+      "no_item_found": "There is no data to show.",
+      "something_went_wrong": "Something went wrong and data couldn't loaded.",
+      "an_unknown_error": "An unknown error happened.",
+      "no_internet_connection": "Internet connectivity is not available.",
+      "server_failure": "Server failure encountered.",
+      "communication_error": "There was an error with our communication with the servers."
+    }
+  },
+  "file_picker": {
+    "size_warning": "File size cannot be more than $maxSize mb.",
+    "no_permission": "We have no permission to open your gallery."
+  },
+  "no_feature": {
+    "in_progress": "Chức năng đang trong quá trình phát triển"
+  }
+}
