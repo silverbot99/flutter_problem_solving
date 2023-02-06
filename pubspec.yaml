@@ -154,12 +154,12 @@ flutter:
 # Native splash screen settings.
 flutter_native_splash:
   color: "#ffffff"
-  image: assets/images/splash/splash_logo_light.png
+  image: assets/images/splash/splash_speech_bubble.png
   color_dark: "#000000"
-  image_dark: assets/images/splash/splash_logo_dark.png
+  image_dark: assets/images/splash/splash_speech_bubble.png
   android_12:
-    image: assets/images/splash/splash_logo_light.png
+    image: assets/images/splash/splash_speech_bubble.png
     icon_background_color: "#ffffff"
-    image_dark: assets/images/splash/splash_logo_dark.png
+    image_dark: assets/images/splash/splash_speech_bubble.png
     icon_background_color_dark: "#000000"
   fullscreen: true

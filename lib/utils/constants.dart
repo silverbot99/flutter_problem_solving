@@ -123,7 +123,7 @@ class _Navigation {
   List<AppBar> appbars(BuildContext context) => [
         AppBar(
           title: Text(
-            context.t.strings.navigation.bottom.sample,
+            context.t.strings.navigation.bottom.home,
           ),
         ),
         AppBar(
@@ -156,7 +156,7 @@ class _Navigation {
             MdiIcons.apple,
             size: 24,
           ),
-          label: context.t.strings.navigation.bottom.sample,
+          label: context.t.strings.navigation.bottom.home,
         ),
         NavigationDestination(
           icon: const Icon(

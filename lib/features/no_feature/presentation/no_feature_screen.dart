@@ -13,7 +13,7 @@ class NoFeatureScreen extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         children: [
           Spacer(),
-          Text(context.t.strings.no_feature.in_progress)
+          Text(context.t.strings.no_feature.in_progress),
         ],
       ),
     );
