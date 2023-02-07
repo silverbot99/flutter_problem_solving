@@ -49,5 +49,12 @@
   },
   "no_feature": {
     "in_progress": "Chức năng đang trong quá trình phát triển"
+  },
+  "dashboard": {
+    "greeting": "Chào buổi sáng, Silvia",
+    "how_you_feel": "Bây giờ bạn cảm thấy thế nào?",
+    "description":  "Mô tả vấn đề bạn đang gặp?",
+    "info_problem": "Tình hình, sự kiện hiện tại, có những thông tin gì?",
+    "hint_write": "Viết gì đó..."
   }
 }

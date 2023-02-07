@@ -1,118 +1,90 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_problem_solving/features/app/widgets/utils/keyboard_dismisser.dart';
+import 'package:flutter_problem_solving/i18n/strings.g.dart';
 import 'package:flutter_problem_solving/utils/methods/shortcuts.dart';
+
+import 'components//choose_emotions.dart';
+import 'components/mind_dump_text_field.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
 
-  // final double currentAmount;
-
   @override
-  State<StatefulWidget> createState() => _DashboardScreenState();
+  State<DashboardScreen> createState() => _DashboardScreenState();
 }
 
 class _DashboardScreenState extends State<DashboardScreen> {
+
+  String textProblem = '';
+  String textInfo = '';
+
+  bool isHappy = false;
+  bool isBadMood = false;
+  bool isStress = false;
+  bool isDissatisfied = false;
+  bool isAnxious = false;
+
+  @override
+  void initState() {
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SizedBox(
-        width: getSize(context).width,
-        height: getSize(context).height,
-        child: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              const Padding(
-                padding: EdgeInsets.all(16),
-                child: Text('Chào buổi sáng, Silvia'),
-              ),
-               Padding(
-                 padding: EdgeInsets.only(top: 16, left: 16, right: 16),
-                 child: Container(
-                   decoration: BoxDecoration(
-                     borderRadius: BorderRadius.circular(20),
-                     color: Colors.grey,
-                   ),
-                   child: Column(
-                     children: [
-                       const Padding(
-                         padding: EdgeInsets.only(top: 8),
-                          child: Text("Bây giờ bạn cảm thấy thế nào?"),
-                       ),
-                       Padding(
-                         padding: EdgeInsets.only(top: 8),
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             IconButton(
-                                 onPressed: () {},
-                                 icon: const Icon(
-                                   Icons.sentiment_very_satisfied,
-                                   size: 32,
-                                   color: Colors.white,
-                                 ),
-                             ),
-                             IconButton(
-                               onPressed: () {},
-                               icon: const Icon(
-                                           Icons.mood_bad,
-                                           size: 32,
-                                           color: Colors.white,
-                                         ),),
-                             IconButton(
-                               onPressed: () {},
-                               icon: const Icon(
-                                           Icons.sentiment_dissatisfied,
-                                           size: 32,
-                                           color: Colors.white,
-                                         ),),
-                             IconButton(
-                               onPressed: () {},
-                               icon: const Icon(
-                                           Icons.sentiment_very_dissatisfied,
-                                           size: 32,
-                                           color: Colors.white,
-                                         ),),
-                             IconButton(
-                               onPressed: () {},
-                               icon: const Icon(
-                                           Icons.sentiment_very_dissatisfied_outlined,
-                                           size: 32,
-                                           color: Colors.white,
-                                         ),
-                             ),
-                           ],
-                         ),
-                       ),
-                     ],
-                   ),
-                 ),
-               ),
-
-              Padding(
-                padding: const EdgeInsets.only(top: 16, left: 16, right: 16),
-                child: Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Colors.grey,
+    return KeyboardDismisserWidget(
+        child: Scaffold(
+          body: SizedBox(
+            width: getSize(context).width,
+            height: getSize(context).height,
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Padding(
+                    padding: EdgeInsets.all(16),
+                    child: Text(context.t.strings.dashboard.greeting),
                   ),
-                  child: Column(
-                    children: const [
-                      Padding(
-                        padding: EdgeInsets.only(top: 8),
-                        child: Text("Vấn đề của bạn hiện tại"),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(top: 8, left: 16, right: 16),
-                        child: TextField(),
-                      ),
-                    ],
+                  Padding(
+                    padding: EdgeInsets.only(top: 16, left: 16, right: 16),
+                    child: ChooseEmotions(
+                      isHappy: isHappy,
+                      isBadMood:isBadMood,
+                      isStress:isStress,
+                      isDissatisfied:isDissatisfied,
+                      isAnxious:isAnxious,
+                    ),
                   ),
-                ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 20, left: 16, right: 16),
+                    child: MindDumbTextField(
+                      placeholderText: context.t.strings.dashboard.description,
+                      text: textProblem,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 20, left: 16, right: 16),
+                    child: MindDumbTextField(
+                      placeholderText: context.t.strings.dashboard.info_problem,
+                      text: textInfo,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 20, left: 16, right: 16),
+                    child: Center(
+                      child: IconButton(
+                        icon: const Icon(
+                          Icons.add_circle,
+                          size: 40,
+                          color: Colors.grey,
+                        ), onPressed: () {},
+                      ),
+                    ),
+                  ),
+                ],
               ),
-            ],
+            ),
           ),
         ),
-      ),
     );
   }
 }

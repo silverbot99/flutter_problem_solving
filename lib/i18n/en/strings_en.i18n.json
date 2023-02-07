@@ -49,5 +49,12 @@
   },
   "no_feature": {
     "in_progress": "Function in progress"
+  },
+  "dashboard": {
+    "greeting": "Welcome, Silvia",
+    "how_you_feel": "Now, how do you feel?",
+    "description":  "Describe the problem",
+    "info_problem": "What information is available?",
+    "hint_write": "Write something..."
   }
 }
