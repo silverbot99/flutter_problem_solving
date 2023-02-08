@@ -12,6 +12,7 @@ class MindDumbTextField extends StatefulWidget {
 }
 
 class _MindDumbTextFieldState extends State<MindDumbTextField> {
+  TextEditingController placeholderController = TextEditingController();
   TextEditingController editTextController = TextEditingController();
 
   @override
@@ -25,7 +26,20 @@ class _MindDumbTextFieldState extends State<MindDumbTextField> {
         children: [
           Padding(
             padding: const EdgeInsets.only(top: 8, left: 16, right: 16),
-            child: Text(widget.placeholderText),
+            child: TextField(
+              style: const TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.normal,
+              ),
+              decoration: const InputDecoration.collapsed(
+                hintText: '',
+                hintStyle: TextStyle(color: Colors.black),
+              ),
+              textAlign: TextAlign.center,
+              keyboardType: TextInputType.multiline,
+              maxLines: null,
+              controller: TextEditingController(text: widget.placeholderText),
+            ),
           ),
           Padding(
             padding: const EdgeInsets.only(top: 8, left: 16, right: 16, bottom: 8),

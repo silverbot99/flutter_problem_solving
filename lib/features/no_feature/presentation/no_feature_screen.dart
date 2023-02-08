@@ -8,13 +8,15 @@ class NoFeatureScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       color: Theme.of(context).colorScheme.background,
-      child: ListView(
-        padding: const EdgeInsets.symmetric(horizontal: 16),
-        physics: const BouncingScrollPhysics(),
-        children: [
-          Spacer(),
-          Text(context.t.strings.no_feature.in_progress),
-        ],
+      child: Scaffold(
+        body: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 16, right: 16),
+              child: Text(context.t.strings.no_feature.in_progress),
+            ),
+          ],
+        ),
       ),
     );
   }
