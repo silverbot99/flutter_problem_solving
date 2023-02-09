@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_problem_solving/features/app/widgets/utils/keyboard_dismisser.dart';
-import 'package:flutter_problem_solving/features/dashboard/models/current_emotion_singleton.dart';
-import 'package:flutter_problem_solving/features/dashboard/models/dashboard_choose_emotions.dart';
 import 'package:flutter_problem_solving/i18n/strings.g.dart';
 import 'package:flutter_problem_solving/utils/methods/shortcuts.dart';
 import '../models/data_txt.dart';
@@ -16,6 +14,8 @@ class DashboardScreen extends StatefulWidget {
 }
 
 class _DashboardScreenState extends State<DashboardScreen> {
+  String textDescription = '';
+  String textInfo = '';
 
   bool isHappy = false;
   bool isBadMood = false;
@@ -23,17 +23,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
   bool isDissatisfied = false;
   bool isAnxious = false;
 
-  // ChooseEmotionsEnum emotionOption = ChooseEmotionsEnum.happy;
   List<DataTXT> arrText = [];
-  // CurrentEmotion currentEmotion = CurrentEmotion(ChooseEmotionsEnum.happy, []);
-
-  @override
-  void initState() {
-    // CurrentEmotion currentEmotion = CurrentEmotion(ChooseEmotionsEnum.happy, []);
-    // print('currentEmotion myList: ${currentEmotion.myObjectList}/emotion: ${currentEmotion.currentEmotion}');
-    final currentEmotion = CurrentEmotion(ChooseEmotionsEnum.happy, []);
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -58,6 +48,20 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       isStress:isStress,
                       isDissatisfied:isDissatisfied,
                       isAnxious:isAnxious,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 20, left: 8, right: 8),
+                    child: MindDumbTextField(
+                      placeholderText: context.t.strings.dashboard.description,
+                      text: textDescription,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 20, left: 8, right: 8),
+                    child: MindDumbTextField(
+                      placeholderText: context.t.strings.dashboard.info_problem,
+                      text: textDescription,
                     ),
                   ),
                   ListView.builder(
@@ -93,14 +97,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                     errorMSG: '',
                                 ),
                             );
-                            // currentEmotion.addDataToList(
-                            //     const DataTXT(
-                            //         placeholder: '',
-                            //         content: '',
-                            //         isTrue: true,
-                            //         errorMSG: '',
-                            //     ),
-                            // );
                           });
                       },
                       ),

@@ -9,6 +9,9 @@ import 'package:flutter_problem_solving/i18n/strings.g.dart';
 import 'package:flutter_problem_solving/modules/bloc_observer/observer.dart';
 import 'package:flutter_problem_solving/modules/dependency_injection/di.dart';
 import 'package:flutter_problem_solving/modules/sentry/sentry_module.dart';
+import 'package:flutter_problem_solving/utils/methods/shortcuts.dart';
+import 'package:hive/hive.dart';
+import 'package:hive_flutter/adapters.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
@@ -31,6 +34,9 @@ Future<void> main() async {
       // Configures dependency injection to init modules and singletons.
       await configureDependencyInjection();
 
+      // Configures Hive databases.
+      await setupHive();
+
       if (UniversalPlatform.isAndroid) {
         // Increases android devices preferred refresh rate to its maximum.
         await FlutterDisplayMode.setHighRefreshRate();
@@ -44,13 +50,13 @@ Future<void> main() async {
       }
 
       // Sets system overylay style.
-      await SystemChrome.setEnabledSystemUIMode(
-        SystemUiMode.manual,
-        overlays: [
-          SystemUiOverlay.top,
-          SystemUiOverlay.bottom,
-        ],
-      );
+      // await SystemChrome.setEnabledSystemUIMode(
+      //   SystemUiMode.manual,
+      //   overlays: [
+      //     SystemUiOverlay.top,
+      //     SystemUiOverlay.bottom,
+      //   ],
+      // );
 
       // This setting smoothes transition color for LinearGradient.
       Paint.enableDithering = true;

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
+import 'package:hive_flutter/adapters.dart';
 import 'package:intl/intl.dart';
 
 Size getSize(BuildContext context) {
@@ -64,6 +66,19 @@ LinearGradient colorsToGradient(List<Color> colors, {double opacity = 1}) {
     end: Alignment.bottomCenter,
     colors: colors.map((c) => c.withOpacity(opacity)).toList(),
   );
+}
+T? cast<T>(x) => x is T ? x : null;
+
+bool boolNotNull(dynamic value){
+  var result = cast<bool>(value);
+  return result != null ? result : false;
+}
+
+Future<void> setupHive() async {
+  await Hive.initFlutter();
+
+  //Box is like table or collection
+  await Hive.openBox<int>('tutorial');
 }
 
 extension IntCurrency on int {

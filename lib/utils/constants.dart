@@ -4,6 +4,8 @@ import 'package:flutter_problem_solving/features/no_feature/presentation/no_feat
 import 'package:flutter_problem_solving/i18n/strings.g.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
+import '../features/dashboard/presentation/research_hive.dart';
+
 final $constants = Constants();
 
 @immutable
@@ -147,7 +149,8 @@ class _Navigation {
   List<Widget> bottomNavigationScreens() => const [
         DashboardScreen(),
         NoFeatureScreen(),
-        NoFeatureScreen()
+        // NoFeatureScreen(),
+        SettingsPage(),
       ];
 
   List<NavigationDestination> bottomNavigationItems(BuildContext context) => [
