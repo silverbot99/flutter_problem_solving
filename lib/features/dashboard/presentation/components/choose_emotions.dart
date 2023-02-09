@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_problem_solving/features/dashboard/models/dashboard_choose_emotions.dart';
 import 'package:flutter_problem_solving/i18n/strings.g.dart';
+import 'package:hive/hive.dart';
 
 class ChooseEmotions extends StatefulWidget {
   const ChooseEmotions({
@@ -113,6 +114,8 @@ class _ChooseEmotionsState extends State<ChooseEmotions> {
 
   void onClickEmotions(ChooseEmotionsEnum emotion) {
     print('click emotion: $emotion');
+    final emotionBox = Hive.box<ChooseEmotionsEnum>('emotion');
+
     setState(() {
       isHappy = false;
       isBadMood = false;
@@ -123,20 +126,27 @@ class _ChooseEmotionsState extends State<ChooseEmotions> {
       switch (emotion) {
         case ChooseEmotionsEnum.happy:
           isHappy = true;
+          emotionBox.put('emotion_key', ChooseEmotionsEnum.happy);
           break;
         case ChooseEmotionsEnum.badMood:
           isBadMood = true;
+          emotionBox.put('emotion_key', ChooseEmotionsEnum.badMood);
           break;
         case ChooseEmotionsEnum.stress:
           isStress = true;
+          emotionBox.put('emotion_key', ChooseEmotionsEnum.stress);
           break;
         case ChooseEmotionsEnum.dissatisfied:
           isDissatisfied = true;
+          emotionBox.put('emotion_key', ChooseEmotionsEnum.dissatisfied);
           break;
         case ChooseEmotionsEnum.anxious:
           isAnxious = true;
+          emotionBox.put('emotion_key', ChooseEmotionsEnum.anxious);
           break;
       }
+
     });
+
   }
 }

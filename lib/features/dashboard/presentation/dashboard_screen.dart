@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_problem_solving/features/app/widgets/utils/keyboard_dismisser.dart';
+import 'package:flutter_problem_solving/features/dashboard/models/dashboard_choose_emotions.dart';
 import 'package:flutter_problem_solving/i18n/strings.g.dart';
 import 'package:flutter_problem_solving/utils/methods/shortcuts.dart';
+import 'package:hive/hive.dart';
 import '../models/data_txt.dart';
 import 'components//choose_emotions.dart';
 import 'components/mind_dump_text_field.dart';
@@ -17,13 +19,27 @@ class _DashboardScreenState extends State<DashboardScreen> {
   String textDescription = '';
   String textInfo = '';
 
-  bool isHappy = false;
-  bool isBadMood = false;
-  bool isStress = false;
-  bool isDissatisfied = false;
-  bool isAnxious = false;
+  // bool isHappy = false;
+  // bool isBadMood = false;
+  // bool isStress = false;
+  // bool isDissatisfied = false;
+  // bool isAnxious = false;
 
+  ChooseEmotionsEnum emotion = ChooseEmotionsEnum.happy;
   List<DataTXT> arrText = [];
+
+  @override
+  void initState() {
+    super.initState();
+    final emotionBox = Hive.box<ChooseEmotionsEnum>('emotion');
+    final problemListDataBox = Hive.box<List<DataTXT>>('problem_list_data');
+
+    final emotionValue = emotionBox.get('emotion_key') ?? ChooseEmotionsEnum.happy;
+    final problemListDataValue = problemListDataBox.get('problem_list_data_key') ?? [];
+
+    emotion = emotionValue;
+    arrText = problemListDataValue;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -43,11 +59,11 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   Padding(
                     padding: const EdgeInsets.only(top: 16, left: 16, right: 16),
                     child: ChooseEmotions(
-                      isHappy: isHappy,
-                      isBadMood:isBadMood,
-                      isStress:isStress,
-                      isDissatisfied:isDissatisfied,
-                      isAnxious:isAnxious,
+                      isHappy: (emotion == ChooseEmotionsEnum.happy) ? true : false,
+                      isBadMood: (emotion == ChooseEmotionsEnum.badMood) ? true : false,
+                      isStress: (emotion == ChooseEmotionsEnum.stress) ? true : false,
+                      isDissatisfied: (emotion == ChooseEmotionsEnum.dissatisfied) ? true : false,
+                      isAnxious: (emotion == ChooseEmotionsEnum.anxious) ? true : false,
                     ),
                   ),
                   Padding(
@@ -98,6 +114,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 ),
                             );
                           });
+                          final problemListDataBox = Hive.box<List<DataTXT>>('problem_list_data');
+                          problemListDataBox.put('problem_list_data_key', arrText);
                       },
                       ),
                     ),

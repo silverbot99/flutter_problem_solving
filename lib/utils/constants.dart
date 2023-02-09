@@ -2,8 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_problem_solving/features/dashboard/presentation/dashboard_screen.dart';
 import 'package:flutter_problem_solving/features/no_feature/presentation/no_feature_screen.dart';
 import 'package:flutter_problem_solving/i18n/strings.g.dart';
+import 'package:hive/hive.dart';
+import 'package:hive_flutter/adapters.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
+import '../features/dashboard/models/dashboard_choose_emotions.dart';
+import '../features/dashboard/models/data_txt.dart';
 import '../features/dashboard/presentation/research_hive.dart';
 
 final $constants = Constants();
@@ -176,4 +180,12 @@ class _Navigation {
           label: context.t.strings.navigation.bottom.informations,
         ),
       ];
+}
+
+Future<void> setupHive() async {
+  await Hive.initFlutter();
+
+  await Hive.openBox<int>('tutorial');
+  await Hive.openBox<ChooseEmotionsEnum>('emotion');
+  await Hive.openBox<List<DataTXT>>('problem_list_data');
 }

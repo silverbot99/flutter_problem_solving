@@ -9,14 +9,13 @@ import 'package:flutter_problem_solving/i18n/strings.g.dart';
 import 'package:flutter_problem_solving/modules/bloc_observer/observer.dart';
 import 'package:flutter_problem_solving/modules/dependency_injection/di.dart';
 import 'package:flutter_problem_solving/modules/sentry/sentry_module.dart';
-import 'package:flutter_problem_solving/utils/methods/shortcuts.dart';
-import 'package:hive/hive.dart';
-import 'package:hive_flutter/adapters.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
 import 'package:universal_platform/universal_platform.dart';
 import 'package:url_strategy/url_strategy.dart';
+
+import 'utils/constants.dart';
 
 Future<void> main() async {
   await runZonedGuarded<Future<void>>(
