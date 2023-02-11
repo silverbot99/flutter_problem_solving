@@ -1,0 +1,1 @@
+[{"type":{"import":"package:flutter_problem_solving/features/app/blocs/app_cubit.dart","name":"AppCubit","isNullable":false},"typeImpl":{"import":"package:flutter_problem_solving/features/app/blocs/app_cubit.dart","name":"AppCubit","isNullable":false},"isAsync":false,"preResolve":false,"injectableType":2,"dependsOn":[],"environments":[],"dependencies":[],"constructorName":""}]
