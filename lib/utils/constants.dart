@@ -111,11 +111,11 @@ class _Palette {
 
 @immutable
 class _Theme {
-  final tryToGetColorPaletteFromWallpaper = true;
+  final tryToGetColorPaletteFromWallpaper = false;
   final defaultThemeColor = const Color(0xFF0000FF);
   final defaultFontFamily = 'Roboto_Slab';
   final double defaultElevation = 0;
-  final double defaultBorderRadius = 24;
+  final double defaultBorderRadius = 8;
 }
 
 @immutable
