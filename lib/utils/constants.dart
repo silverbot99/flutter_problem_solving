@@ -6,7 +6,6 @@ import 'package:hive/hive.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
-import '../features/auth/login/blocs/auth_cubit.dart';
 import '../features/dashboard/models/dashboard_choose_emotions.dart';
 import '../features/dashboard/models/data_txt.dart';
 import '../features/dashboard/presentation/research_hive.dart';
@@ -117,7 +116,7 @@ class _Theme {
   final defaultThemeColor = Colors.white;
   final defaultFontFamily = 'Roboto_Slab';
   final double defaultElevation = 0;
-  final double defaultBorderRadius = 24;
+  final double defaultBorderRadius = 8;
 }
 
 @immutable

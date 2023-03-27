@@ -35,6 +35,7 @@ class _CustomButtonState extends State<CustomButton> {
       elevation: $constants.theme.defaultElevation,
       width: widget.width,
       height: widget.height,
+      borderRadius: $constants.theme.defaultBorderRadius,
       color: widget.onPressed != null ? getCustomOnPrimaryColor(context) : getPrimaryColor(context),
       controller: widget.controller,
       onPressed: widget.onPressed,
