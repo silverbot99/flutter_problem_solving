@@ -75,7 +75,7 @@ Future<void> main() async {
         DefaultAssetBundle(
           bundle: SentryAssetBundle(),
           child: TranslationProvider(
-            child: const App(),
+            child: App(),
           ),
         ),
       );

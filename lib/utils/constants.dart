@@ -6,9 +6,11 @@ import 'package:hive/hive.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
+import '../features/auth/login/blocs/auth_cubit.dart';
 import '../features/dashboard/models/dashboard_choose_emotions.dart';
 import '../features/dashboard/models/data_txt.dart';
 import '../features/dashboard/presentation/research_hive.dart';
+import '../modules/dependency_injection/di.dart';
 
 final $constants = Constants();
 
@@ -112,7 +114,7 @@ class _Palette {
 @immutable
 class _Theme {
   final tryToGetColorPaletteFromWallpaper = true;
-  final defaultThemeColor = const Color(0xFF0000FF);
+  final defaultThemeColor = Colors.white;
   final defaultFontFamily = 'Roboto_Slab';
   final double defaultElevation = 0;
   final double defaultBorderRadius = 24;
@@ -134,8 +136,7 @@ class _Navigation {
         ),
         AppBar(
           leading: IconButton(
-            // onPressed: () => getIt<AuthCubit>().logOut(),
-            onPressed: () {},
+            onPressed: () => getIt<AuthCubit>().logOut(),
             icon: const Icon(MdiIcons.logout),
           ),
           title: Text(

@@ -6,61 +6,122 @@ import 'package:flutter_problem_solving/theme/text/app_text_theme.dart';
 import 'package:flutter_problem_solving/theme/text/app_typography.dart';
 import 'package:flutter_problem_solving/utils/constants.dart';
 
-Future<ThemeData> createTheme({
-  Color? color,
+// Future<ThemeData> createTheme({
+//   Color? color,
+//   required Brightness brightness,
+// }) async {
+//
+//   final colorScheme = _getColorScheme(color: color, brightness: brightness);
+//   final dynamicColorScheme = await _getDynamicColors(brightness: brightness);
+//   // final appColorScheme = _getAppColorScheme(
+//   //   color: color,
+//   //   colorScheme: colorScheme,
+//   //   dynamicColorScheme: dynamicColorScheme,
+//   //   brightness: brightness,
+//   // );
+//
+//   final appTypography = AppTypography.create(fontFamily: $constants.theme.defaultFontFamily);
+//   final textTheme = _getTextTheme(appTypography: appTypography, brightness: brightness);
+//
+//   // final primaryColor = ElevationOverlay.colorWithOverlay(appColorScheme.surface, appColorScheme.primary, 3);
+//   // final customOnPrimaryColor = appColorScheme.primary.withOpacity(0.5);
+//
+//   return ThemeData(
+//     textTheme: textTheme.materialTextTheme,
+//     splashColor: Colors.transparent,
+//     highlightColor: Colors.transparent,
+//     // colorScheme: appColorScheme.materialColorScheme,
+//     // brightness: appColorScheme.brightness,
+//     typography: appTypography.materialTypography,
+//     useMaterial3: true,
+//     // toggleableActiveColor: customOnPrimaryColor,
+//     // appBarTheme: AppBarTheme(
+//     //   elevation: $constants.theme.defaultElevation,
+//     //   systemOverlayStyle: createOverlayStyle(
+//     //     brightness: brightness,
+//     //     primaryColor: primaryColor,
+//     //   ),
+//     // ),
+//     splashFactory: InkRipple.splashFactory,
+//     // scaffoldBackgroundColor: appColorScheme.surface,
+//     floatingActionButtonTheme: FloatingActionButtonThemeData(
+//       elevation: $constants.theme.defaultElevation,
+//       highlightElevation: $constants.theme.defaultElevation,
+//     ),
+//     // iconTheme: IconThemeData(
+//     //   color: appColorScheme.primary,
+//     // ),
+//     cardTheme: CardTheme(
+//       elevation: $constants.theme.defaultElevation,
+//       // color: primaryColor,
+//       shape: RoundedRectangleBorder(
+//         borderRadius: BorderRadius.all(
+//           Radius.circular(
+//             $constants.theme.defaultBorderRadius,
+//           ),
+//         ),
+//       ),
+//     ),
+//   );
+// }
+
+
+Future<ThemeData> createCustomTheme({
   required Brightness brightness,
 }) async {
+
+  final color = (brightness == Brightness.light) ? Colors.white : Colors.black;
   final colorScheme = _getColorScheme(color: color, brightness: brightness);
   final dynamicColorScheme = await _getDynamicColors(brightness: brightness);
-  final appColorScheme = _getAppColorScheme(
-    color: color,
-    colorScheme: colorScheme,
-    dynamicColorScheme: dynamicColorScheme,
-    brightness: brightness,
-  );
+  // final appColorScheme = _getAppColorScheme(
+  //   color: color,
+  //   colorScheme: colorScheme,
+  //   dynamicColorScheme: dynamicColorScheme,
+  //   brightness: brightness,
+  // );
 
   final appTypography = AppTypography.create(fontFamily: $constants.theme.defaultFontFamily);
   final textTheme = _getTextTheme(appTypography: appTypography, brightness: brightness);
 
-  final primaryColor = ElevationOverlay.colorWithOverlay(appColorScheme.surface, appColorScheme.primary, 3);
-  final customOnPrimaryColor = appColorScheme.primary.withOpacity(0.5);
+  // final primaryColor = ElevationOverlay.colorWithOverlay(appColorScheme.surface, appColorScheme.primary, 3);
+  // final customOnPrimaryColor = appColorScheme.primary.withOpacity(0.5);
 
   return ThemeData(
     textTheme: textTheme.materialTextTheme,
-    splashColor: Colors.transparent,
-    highlightColor: Colors.transparent,
-    colorScheme: appColorScheme.materialColorScheme,
-    brightness: appColorScheme.brightness,
+    // splashColor: Colors.transparent,
+    // highlightColor: Colors.transparent,
+    // colorScheme: appColorScheme.materialColorScheme,
+    // brightness: appColorScheme.brightness,
     typography: appTypography.materialTypography,
     useMaterial3: true,
-    toggleableActiveColor: customOnPrimaryColor,
-    appBarTheme: AppBarTheme(
-      elevation: $constants.theme.defaultElevation,
-      systemOverlayStyle: createOverlayStyle(
-        brightness: brightness,
-        primaryColor: primaryColor,
-      ),
-    ),
-    splashFactory: InkRipple.splashFactory,
-    scaffoldBackgroundColor: appColorScheme.surface,
-    floatingActionButtonTheme: FloatingActionButtonThemeData(
-      elevation: $constants.theme.defaultElevation,
-      highlightElevation: $constants.theme.defaultElevation,
-    ),
-    iconTheme: IconThemeData(
-      color: appColorScheme.primary,
-    ),
-    cardTheme: CardTheme(
-      elevation: $constants.theme.defaultElevation,
-      color: primaryColor,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.all(
-          Radius.circular(
-            $constants.theme.defaultBorderRadius,
-          ),
-        ),
-      ),
-    ),
+    // toggleableActiveColor: customOnPrimaryColor,
+    // appBarTheme: AppBarTheme(
+    //   elevation: $constants.theme.defaultElevation,
+    //   systemOverlayStyle: createOverlayStyle(
+    //     brightness: brightness,
+    //     primaryColor: primaryColor,
+    //   ),
+    // ),
+    // splashFactory: InkRipple.splashFactory,
+    // scaffoldBackgroundColor: appColorScheme.surface,
+    // floatingActionButtonTheme: FloatingActionButtonThemeData(
+    //   elevation: $constants.theme.defaultElevation,
+    //   highlightElevation: $constants.theme.defaultElevation,
+    // ),
+    // iconTheme: IconThemeData(
+    //   color: appColorScheme.primary,
+    // ),
+    // cardTheme: CardTheme(
+    //   elevation: $constants.theme.defaultElevation,
+    //   // color: primaryColor,
+    //   shape: RoundedRectangleBorder(
+    //     borderRadius: BorderRadius.all(
+    //       Radius.circular(
+    //         $constants.theme.defaultBorderRadius,
+    //       ),
+    //     ),
+    //   ),
+    // ),
   );
 }
 
@@ -92,8 +153,7 @@ Future<ColorScheme?> _getDynamicColors({required Brightness brightness}) async {
 }
 
 ColorScheme _getColorScheme({
-  Color? color,
-  required Brightness brightness,
+  required Brightness brightness, Color? color,
 }) {
   return ColorScheme.fromSeed(
     seedColor: color ?? $constants.theme.defaultThemeColor,

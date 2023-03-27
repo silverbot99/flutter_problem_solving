@@ -1,7 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_problem_solving/features/app/blocs/app_cubit.dart';
 import 'package:flutter_problem_solving/modules/dependency_injection/di.dart';
 import 'package:flutter_problem_solving/utils/router.gr.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
@@ -32,7 +31,6 @@ class _AppWrapperState extends State<AppWrapper> with WidgetsBindingObserver {
 
   @override
   Future<void> didChangePlatformBrightness() async {
-    getIt<AppCubit>().updateSystemOverlay();
     super.didChangePlatformBrightness();
   }
 

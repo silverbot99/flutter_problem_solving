@@ -10,11 +10,16 @@ import 'package:flutter_problem_solving/utils/methods/aliases.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
 import 'package:statsfl/statsfl.dart';
 
+import '../../theme/text/app_typography.dart';
+
 class App extends StatelessWidget {
-  const App({super.key});
+  App({super.key});
+
+  final AppTypography appTypography = AppTypography.create(fontFamily: $constants.theme.defaultFontFamily);
 
   @override
   Widget build(BuildContext context) {
+
     return StatsFl(
       maxFps: 120,
       align: Alignment.bottomRight,
@@ -22,13 +27,13 @@ class App extends StatelessWidget {
       child: BlocProvider(
         create: (context) => getIt<AppCubit>(),
         child: BlocBuilder<AppCubit, AppState>(
-          buildWhen: (p, c) => p.theme != c.theme,
           builder: (context, state) {
             return MaterialApp.router(
               /// Theme configuration.
-              theme: state.theme.light,
-              darkTheme: state.theme.dark,
-              themeMode: state.theme.mode,
+              theme: ThemeData(
+                textTheme: appTypography.black.materialTextTheme,
+                typography: appTypography.materialTypography,
+              ),
 
               /// Environment configuration.
               title: $constants.appTitle,
