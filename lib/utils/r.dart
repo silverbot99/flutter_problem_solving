@@ -10,6 +10,33 @@ class R {
 
 class _ImageResources {
   const _ImageResources();
+
+  /// ![](/Users/admin/Documents/flutter_problem_solving/assets/images/auth/ic_cancel_x.png)
+  final ic_cancel_x = r'assets/images/auth/ic_cancel_x.png';
+
+  /// ![](/Users/admin/Documents/flutter_problem_solving/assets/images/github/web_system_light_tr.png)
+  final web_system_light_tr = r'assets/images/github/web_system_light_tr.png';
+
+  /// ![](/Users/admin/Documents/flutter_problem_solving/assets/images/github/ios_light_tr.png)
+  final ios_light_tr = r'assets/images/github/ios_light_tr.png';
+
+  /// ![](/Users/admin/Documents/flutter_problem_solving/assets/images/github/web_dark_en.png)
+  final web_dark_en = r'assets/images/github/web_dark_en.png';
+
+  /// ![](/Users/admin/Documents/flutter_problem_solving/assets/images/github/android_dark_en.png)
+  final android_dark_en = r'assets/images/github/android_dark_en.png';
+
+  /// ![](/Users/admin/Documents/flutter_problem_solving/assets/images/splash/splash_speech_bubble.png)
+  final splash_speech_bubble = r'assets/images/splash/splash_speech_bubble.png';
+
+  /// ![](/Users/admin/Documents/flutter_problem_solving/assets/images/splash/splash_logo_dark.png)
+  final splash_logo_dark = r'assets/images/splash/splash_logo_dark.png';
+
+  /// ![](/Users/admin/Documents/flutter_problem_solving/assets/images/splash/splash_logo_papmall.png)
+  final splash_logo_papmall = r'assets/images/splash/splash_logo_papmall.png';
+
+  /// ![](/Users/admin/Documents/flutter_problem_solving/assets/images/splash/splash_logo_light.png)
+  final splash_logo_light = r'assets/images/splash/splash_logo_light.png';
 }
 
 class _SvgResources {

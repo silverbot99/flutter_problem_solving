@@ -16,21 +16,21 @@ final _privateConstructorUsedError = UnsupportedError(
 
 /// @nodoc
 mixin _$AppTextTheme {
-  TextStyle get displayLarge => throw _privateConstructorUsedError;
-  TextStyle get displayMedium => throw _privateConstructorUsedError;
-  TextStyle get displaySmall => throw _privateConstructorUsedError;
-  TextStyle get headlineLarge => throw _privateConstructorUsedError;
-  TextStyle get headlineMedium => throw _privateConstructorUsedError;
-  TextStyle get headlineSmall => throw _privateConstructorUsedError;
-  TextStyle get titleLarge => throw _privateConstructorUsedError;
-  TextStyle get titleMedium => throw _privateConstructorUsedError;
-  TextStyle get titleSmall => throw _privateConstructorUsedError;
-  TextStyle get bodyLarge => throw _privateConstructorUsedError;
-  TextStyle get bodyMedium => throw _privateConstructorUsedError;
-  TextStyle get bodySmall => throw _privateConstructorUsedError;
-  TextStyle get labelLarge => throw _privateConstructorUsedError;
-  TextStyle get labelMedium => throw _privateConstructorUsedError;
-  TextStyle get labelSmall => throw _privateConstructorUsedError;
+  TextStyle get titleSemiBold28 => throw _privateConstructorUsedError;
+  TextStyle get titleSemiBold24 => throw _privateConstructorUsedError;
+  TextStyle get headlineMedium21 => throw _privateConstructorUsedError;
+  TextStyle get headlineSemiBold19 => throw _privateConstructorUsedError;
+  TextStyle get headlineRegular19 => throw _privateConstructorUsedError;
+  TextStyle get textSemiBold17 => throw _privateConstructorUsedError;
+  TextStyle get textRegular17 => throw _privateConstructorUsedError;
+  TextStyle get textSemiBold16 => throw _privateConstructorUsedError;
+  TextStyle get textMedium16 => throw _privateConstructorUsedError;
+  TextStyle get textRegular16 => throw _privateConstructorUsedError;
+  TextStyle get textSemiBold15 => throw _privateConstructorUsedError;
+  TextStyle get textRegular15 => throw _privateConstructorUsedError;
+  TextStyle get textSemiBold14 => throw _privateConstructorUsedError;
+  TextStyle get textMedium14 => throw _privateConstructorUsedError;
+  TextStyle get textRegular14 => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $AppTextThemeCopyWith<AppTextTheme> get copyWith =>
@@ -44,21 +44,21 @@ abstract class $AppTextThemeCopyWith<$Res> {
       _$AppTextThemeCopyWithImpl<$Res, AppTextTheme>;
   @useResult
   $Res call(
-      {TextStyle displayLarge,
-      TextStyle displayMedium,
-      TextStyle displaySmall,
-      TextStyle headlineLarge,
-      TextStyle headlineMedium,
-      TextStyle headlineSmall,
-      TextStyle titleLarge,
-      TextStyle titleMedium,
-      TextStyle titleSmall,
-      TextStyle bodyLarge,
-      TextStyle bodyMedium,
-      TextStyle bodySmall,
-      TextStyle labelLarge,
-      TextStyle labelMedium,
-      TextStyle labelSmall});
+      {TextStyle titleSemiBold28,
+      TextStyle titleSemiBold24,
+      TextStyle headlineMedium21,
+      TextStyle headlineSemiBold19,
+      TextStyle headlineRegular19,
+      TextStyle textSemiBold17,
+      TextStyle textRegular17,
+      TextStyle textSemiBold16,
+      TextStyle textMedium16,
+      TextStyle textRegular16,
+      TextStyle textSemiBold15,
+      TextStyle textRegular15,
+      TextStyle textSemiBold14,
+      TextStyle textMedium14,
+      TextStyle textRegular14});
 }
 
 /// @nodoc
@@ -74,82 +74,82 @@ class _$AppTextThemeCopyWithImpl<$Res, $Val extends AppTextTheme>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? displayLarge = null,
-    Object? displayMedium = null,
-    Object? displaySmall = null,
-    Object? headlineLarge = null,
-    Object? headlineMedium = null,
-    Object? headlineSmall = null,
-    Object? titleLarge = null,
-    Object? titleMedium = null,
-    Object? titleSmall = null,
-    Object? bodyLarge = null,
-    Object? bodyMedium = null,
-    Object? bodySmall = null,
-    Object? labelLarge = null,
-    Object? labelMedium = null,
-    Object? labelSmall = null,
+    Object? titleSemiBold28 = null,
+    Object? titleSemiBold24 = null,
+    Object? headlineMedium21 = null,
+    Object? headlineSemiBold19 = null,
+    Object? headlineRegular19 = null,
+    Object? textSemiBold17 = null,
+    Object? textRegular17 = null,
+    Object? textSemiBold16 = null,
+    Object? textMedium16 = null,
+    Object? textRegular16 = null,
+    Object? textSemiBold15 = null,
+    Object? textRegular15 = null,
+    Object? textSemiBold14 = null,
+    Object? textMedium14 = null,
+    Object? textRegular14 = null,
   }) {
     return _then(_value.copyWith(
-      displayLarge: null == displayLarge
-          ? _value.displayLarge
-          : displayLarge // ignore: cast_nullable_to_non_nullable
+      titleSemiBold28: null == titleSemiBold28
+          ? _value.titleSemiBold28
+          : titleSemiBold28 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      displayMedium: null == displayMedium
-          ? _value.displayMedium
-          : displayMedium // ignore: cast_nullable_to_non_nullable
+      titleSemiBold24: null == titleSemiBold24
+          ? _value.titleSemiBold24
+          : titleSemiBold24 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      displaySmall: null == displaySmall
-          ? _value.displaySmall
-          : displaySmall // ignore: cast_nullable_to_non_nullable
+      headlineMedium21: null == headlineMedium21
+          ? _value.headlineMedium21
+          : headlineMedium21 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      headlineLarge: null == headlineLarge
-          ? _value.headlineLarge
-          : headlineLarge // ignore: cast_nullable_to_non_nullable
+      headlineSemiBold19: null == headlineSemiBold19
+          ? _value.headlineSemiBold19
+          : headlineSemiBold19 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      headlineMedium: null == headlineMedium
-          ? _value.headlineMedium
-          : headlineMedium // ignore: cast_nullable_to_non_nullable
+      headlineRegular19: null == headlineRegular19
+          ? _value.headlineRegular19
+          : headlineRegular19 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      headlineSmall: null == headlineSmall
-          ? _value.headlineSmall
-          : headlineSmall // ignore: cast_nullable_to_non_nullable
+      textSemiBold17: null == textSemiBold17
+          ? _value.textSemiBold17
+          : textSemiBold17 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      titleLarge: null == titleLarge
-          ? _value.titleLarge
-          : titleLarge // ignore: cast_nullable_to_non_nullable
+      textRegular17: null == textRegular17
+          ? _value.textRegular17
+          : textRegular17 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      titleMedium: null == titleMedium
-          ? _value.titleMedium
-          : titleMedium // ignore: cast_nullable_to_non_nullable
+      textSemiBold16: null == textSemiBold16
+          ? _value.textSemiBold16
+          : textSemiBold16 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      titleSmall: null == titleSmall
-          ? _value.titleSmall
-          : titleSmall // ignore: cast_nullable_to_non_nullable
+      textMedium16: null == textMedium16
+          ? _value.textMedium16
+          : textMedium16 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      bodyLarge: null == bodyLarge
-          ? _value.bodyLarge
-          : bodyLarge // ignore: cast_nullable_to_non_nullable
+      textRegular16: null == textRegular16
+          ? _value.textRegular16
+          : textRegular16 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      bodyMedium: null == bodyMedium
-          ? _value.bodyMedium
-          : bodyMedium // ignore: cast_nullable_to_non_nullable
+      textSemiBold15: null == textSemiBold15
+          ? _value.textSemiBold15
+          : textSemiBold15 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      bodySmall: null == bodySmall
-          ? _value.bodySmall
-          : bodySmall // ignore: cast_nullable_to_non_nullable
+      textRegular15: null == textRegular15
+          ? _value.textRegular15
+          : textRegular15 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      labelLarge: null == labelLarge
-          ? _value.labelLarge
-          : labelLarge // ignore: cast_nullable_to_non_nullable
+      textSemiBold14: null == textSemiBold14
+          ? _value.textSemiBold14
+          : textSemiBold14 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      labelMedium: null == labelMedium
-          ? _value.labelMedium
-          : labelMedium // ignore: cast_nullable_to_non_nullable
+      textMedium14: null == textMedium14
+          ? _value.textMedium14
+          : textMedium14 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      labelSmall: null == labelSmall
-          ? _value.labelSmall
-          : labelSmall // ignore: cast_nullable_to_non_nullable
+      textRegular14: null == textRegular14
+          ? _value.textRegular14
+          : textRegular14 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
     ) as $Val);
   }
@@ -164,21 +164,21 @@ abstract class _$$_AppTextThemeCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {TextStyle displayLarge,
-      TextStyle displayMedium,
-      TextStyle displaySmall,
-      TextStyle headlineLarge,
-      TextStyle headlineMedium,
-      TextStyle headlineSmall,
-      TextStyle titleLarge,
-      TextStyle titleMedium,
-      TextStyle titleSmall,
-      TextStyle bodyLarge,
-      TextStyle bodyMedium,
-      TextStyle bodySmall,
-      TextStyle labelLarge,
-      TextStyle labelMedium,
-      TextStyle labelSmall});
+      {TextStyle titleSemiBold28,
+      TextStyle titleSemiBold24,
+      TextStyle headlineMedium21,
+      TextStyle headlineSemiBold19,
+      TextStyle headlineRegular19,
+      TextStyle textSemiBold17,
+      TextStyle textRegular17,
+      TextStyle textSemiBold16,
+      TextStyle textMedium16,
+      TextStyle textRegular16,
+      TextStyle textSemiBold15,
+      TextStyle textRegular15,
+      TextStyle textSemiBold14,
+      TextStyle textMedium14,
+      TextStyle textRegular14});
 }
 
 /// @nodoc
@@ -192,82 +192,82 @@ class __$$_AppTextThemeCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? displayLarge = null,
-    Object? displayMedium = null,
-    Object? displaySmall = null,
-    Object? headlineLarge = null,
-    Object? headlineMedium = null,
-    Object? headlineSmall = null,
-    Object? titleLarge = null,
-    Object? titleMedium = null,
-    Object? titleSmall = null,
-    Object? bodyLarge = null,
-    Object? bodyMedium = null,
-    Object? bodySmall = null,
-    Object? labelLarge = null,
-    Object? labelMedium = null,
-    Object? labelSmall = null,
+    Object? titleSemiBold28 = null,
+    Object? titleSemiBold24 = null,
+    Object? headlineMedium21 = null,
+    Object? headlineSemiBold19 = null,
+    Object? headlineRegular19 = null,
+    Object? textSemiBold17 = null,
+    Object? textRegular17 = null,
+    Object? textSemiBold16 = null,
+    Object? textMedium16 = null,
+    Object? textRegular16 = null,
+    Object? textSemiBold15 = null,
+    Object? textRegular15 = null,
+    Object? textSemiBold14 = null,
+    Object? textMedium14 = null,
+    Object? textRegular14 = null,
   }) {
     return _then(_$_AppTextTheme(
-      displayLarge: null == displayLarge
-          ? _value.displayLarge
-          : displayLarge // ignore: cast_nullable_to_non_nullable
+      titleSemiBold28: null == titleSemiBold28
+          ? _value.titleSemiBold28
+          : titleSemiBold28 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      displayMedium: null == displayMedium
-          ? _value.displayMedium
-          : displayMedium // ignore: cast_nullable_to_non_nullable
+      titleSemiBold24: null == titleSemiBold24
+          ? _value.titleSemiBold24
+          : titleSemiBold24 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      displaySmall: null == displaySmall
-          ? _value.displaySmall
-          : displaySmall // ignore: cast_nullable_to_non_nullable
+      headlineMedium21: null == headlineMedium21
+          ? _value.headlineMedium21
+          : headlineMedium21 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      headlineLarge: null == headlineLarge
-          ? _value.headlineLarge
-          : headlineLarge // ignore: cast_nullable_to_non_nullable
+      headlineSemiBold19: null == headlineSemiBold19
+          ? _value.headlineSemiBold19
+          : headlineSemiBold19 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      headlineMedium: null == headlineMedium
-          ? _value.headlineMedium
-          : headlineMedium // ignore: cast_nullable_to_non_nullable
+      headlineRegular19: null == headlineRegular19
+          ? _value.headlineRegular19
+          : headlineRegular19 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      headlineSmall: null == headlineSmall
-          ? _value.headlineSmall
-          : headlineSmall // ignore: cast_nullable_to_non_nullable
+      textSemiBold17: null == textSemiBold17
+          ? _value.textSemiBold17
+          : textSemiBold17 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      titleLarge: null == titleLarge
-          ? _value.titleLarge
-          : titleLarge // ignore: cast_nullable_to_non_nullable
+      textRegular17: null == textRegular17
+          ? _value.textRegular17
+          : textRegular17 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      titleMedium: null == titleMedium
-          ? _value.titleMedium
-          : titleMedium // ignore: cast_nullable_to_non_nullable
+      textSemiBold16: null == textSemiBold16
+          ? _value.textSemiBold16
+          : textSemiBold16 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      titleSmall: null == titleSmall
-          ? _value.titleSmall
-          : titleSmall // ignore: cast_nullable_to_non_nullable
+      textMedium16: null == textMedium16
+          ? _value.textMedium16
+          : textMedium16 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      bodyLarge: null == bodyLarge
-          ? _value.bodyLarge
-          : bodyLarge // ignore: cast_nullable_to_non_nullable
+      textRegular16: null == textRegular16
+          ? _value.textRegular16
+          : textRegular16 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      bodyMedium: null == bodyMedium
-          ? _value.bodyMedium
-          : bodyMedium // ignore: cast_nullable_to_non_nullable
+      textSemiBold15: null == textSemiBold15
+          ? _value.textSemiBold15
+          : textSemiBold15 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      bodySmall: null == bodySmall
-          ? _value.bodySmall
-          : bodySmall // ignore: cast_nullable_to_non_nullable
+      textRegular15: null == textRegular15
+          ? _value.textRegular15
+          : textRegular15 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      labelLarge: null == labelLarge
-          ? _value.labelLarge
-          : labelLarge // ignore: cast_nullable_to_non_nullable
+      textSemiBold14: null == textSemiBold14
+          ? _value.textSemiBold14
+          : textSemiBold14 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      labelMedium: null == labelMedium
-          ? _value.labelMedium
-          : labelMedium // ignore: cast_nullable_to_non_nullable
+      textMedium14: null == textMedium14
+          ? _value.textMedium14
+          : textMedium14 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
-      labelSmall: null == labelSmall
-          ? _value.labelSmall
-          : labelSmall // ignore: cast_nullable_to_non_nullable
+      textRegular14: null == textRegular14
+          ? _value.textRegular14
+          : textRegular14 // ignore: cast_nullable_to_non_nullable
               as TextStyle,
     ));
   }
@@ -277,57 +277,57 @@ class __$$_AppTextThemeCopyWithImpl<$Res>
 
 class _$_AppTextTheme extends _AppTextTheme {
   _$_AppTextTheme(
-      {required this.displayLarge,
-      required this.displayMedium,
-      required this.displaySmall,
-      required this.headlineLarge,
-      required this.headlineMedium,
-      required this.headlineSmall,
-      required this.titleLarge,
-      required this.titleMedium,
-      required this.titleSmall,
-      required this.bodyLarge,
-      required this.bodyMedium,
-      required this.bodySmall,
-      required this.labelLarge,
-      required this.labelMedium,
-      required this.labelSmall})
+      {required this.titleSemiBold28,
+      required this.titleSemiBold24,
+      required this.headlineMedium21,
+      required this.headlineSemiBold19,
+      required this.headlineRegular19,
+      required this.textSemiBold17,
+      required this.textRegular17,
+      required this.textSemiBold16,
+      required this.textMedium16,
+      required this.textRegular16,
+      required this.textSemiBold15,
+      required this.textRegular15,
+      required this.textSemiBold14,
+      required this.textMedium14,
+      required this.textRegular14})
       : super._();
 
   @override
-  final TextStyle displayLarge;
+  final TextStyle titleSemiBold28;
   @override
-  final TextStyle displayMedium;
+  final TextStyle titleSemiBold24;
   @override
-  final TextStyle displaySmall;
+  final TextStyle headlineMedium21;
   @override
-  final TextStyle headlineLarge;
+  final TextStyle headlineSemiBold19;
   @override
-  final TextStyle headlineMedium;
+  final TextStyle headlineRegular19;
   @override
-  final TextStyle headlineSmall;
+  final TextStyle textSemiBold17;
   @override
-  final TextStyle titleLarge;
+  final TextStyle textRegular17;
   @override
-  final TextStyle titleMedium;
+  final TextStyle textSemiBold16;
   @override
-  final TextStyle titleSmall;
+  final TextStyle textMedium16;
   @override
-  final TextStyle bodyLarge;
+  final TextStyle textRegular16;
   @override
-  final TextStyle bodyMedium;
+  final TextStyle textSemiBold15;
   @override
-  final TextStyle bodySmall;
+  final TextStyle textRegular15;
   @override
-  final TextStyle labelLarge;
+  final TextStyle textSemiBold14;
   @override
-  final TextStyle labelMedium;
+  final TextStyle textMedium14;
   @override
-  final TextStyle labelSmall;
+  final TextStyle textRegular14;
 
   @override
   String toString() {
-    return 'AppTextTheme(displayLarge: $displayLarge, displayMedium: $displayMedium, displaySmall: $displaySmall, headlineLarge: $headlineLarge, headlineMedium: $headlineMedium, headlineSmall: $headlineSmall, titleLarge: $titleLarge, titleMedium: $titleMedium, titleSmall: $titleSmall, bodyLarge: $bodyLarge, bodyMedium: $bodyMedium, bodySmall: $bodySmall, labelLarge: $labelLarge, labelMedium: $labelMedium, labelSmall: $labelSmall)';
+    return 'AppTextTheme(titleSemiBold28: $titleSemiBold28, titleSemiBold24: $titleSemiBold24, headlineMedium21: $headlineMedium21, headlineSemiBold19: $headlineSemiBold19, headlineRegular19: $headlineRegular19, textSemiBold17: $textSemiBold17, textRegular17: $textRegular17, textSemiBold16: $textSemiBold16, textMedium16: $textMedium16, textRegular16: $textRegular16, textSemiBold15: $textSemiBold15, textRegular15: $textRegular15, textSemiBold14: $textSemiBold14, textMedium14: $textMedium14, textRegular14: $textRegular14)';
   }
 
   @override
@@ -335,56 +335,56 @@ class _$_AppTextTheme extends _AppTextTheme {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_AppTextTheme &&
-            (identical(other.displayLarge, displayLarge) ||
-                other.displayLarge == displayLarge) &&
-            (identical(other.displayMedium, displayMedium) ||
-                other.displayMedium == displayMedium) &&
-            (identical(other.displaySmall, displaySmall) ||
-                other.displaySmall == displaySmall) &&
-            (identical(other.headlineLarge, headlineLarge) ||
-                other.headlineLarge == headlineLarge) &&
-            (identical(other.headlineMedium, headlineMedium) ||
-                other.headlineMedium == headlineMedium) &&
-            (identical(other.headlineSmall, headlineSmall) ||
-                other.headlineSmall == headlineSmall) &&
-            (identical(other.titleLarge, titleLarge) ||
-                other.titleLarge == titleLarge) &&
-            (identical(other.titleMedium, titleMedium) ||
-                other.titleMedium == titleMedium) &&
-            (identical(other.titleSmall, titleSmall) ||
-                other.titleSmall == titleSmall) &&
-            (identical(other.bodyLarge, bodyLarge) ||
-                other.bodyLarge == bodyLarge) &&
-            (identical(other.bodyMedium, bodyMedium) ||
-                other.bodyMedium == bodyMedium) &&
-            (identical(other.bodySmall, bodySmall) ||
-                other.bodySmall == bodySmall) &&
-            (identical(other.labelLarge, labelLarge) ||
-                other.labelLarge == labelLarge) &&
-            (identical(other.labelMedium, labelMedium) ||
-                other.labelMedium == labelMedium) &&
-            (identical(other.labelSmall, labelSmall) ||
-                other.labelSmall == labelSmall));
+            (identical(other.titleSemiBold28, titleSemiBold28) ||
+                other.titleSemiBold28 == titleSemiBold28) &&
+            (identical(other.titleSemiBold24, titleSemiBold24) ||
+                other.titleSemiBold24 == titleSemiBold24) &&
+            (identical(other.headlineMedium21, headlineMedium21) ||
+                other.headlineMedium21 == headlineMedium21) &&
+            (identical(other.headlineSemiBold19, headlineSemiBold19) ||
+                other.headlineSemiBold19 == headlineSemiBold19) &&
+            (identical(other.headlineRegular19, headlineRegular19) ||
+                other.headlineRegular19 == headlineRegular19) &&
+            (identical(other.textSemiBold17, textSemiBold17) ||
+                other.textSemiBold17 == textSemiBold17) &&
+            (identical(other.textRegular17, textRegular17) ||
+                other.textRegular17 == textRegular17) &&
+            (identical(other.textSemiBold16, textSemiBold16) ||
+                other.textSemiBold16 == textSemiBold16) &&
+            (identical(other.textMedium16, textMedium16) ||
+                other.textMedium16 == textMedium16) &&
+            (identical(other.textRegular16, textRegular16) ||
+                other.textRegular16 == textRegular16) &&
+            (identical(other.textSemiBold15, textSemiBold15) ||
+                other.textSemiBold15 == textSemiBold15) &&
+            (identical(other.textRegular15, textRegular15) ||
+                other.textRegular15 == textRegular15) &&
+            (identical(other.textSemiBold14, textSemiBold14) ||
+                other.textSemiBold14 == textSemiBold14) &&
+            (identical(other.textMedium14, textMedium14) ||
+                other.textMedium14 == textMedium14) &&
+            (identical(other.textRegular14, textRegular14) ||
+                other.textRegular14 == textRegular14));
   }
 
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      displayLarge,
-      displayMedium,
-      displaySmall,
-      headlineLarge,
-      headlineMedium,
-      headlineSmall,
-      titleLarge,
-      titleMedium,
-      titleSmall,
-      bodyLarge,
-      bodyMedium,
-      bodySmall,
-      labelLarge,
-      labelMedium,
-      labelSmall);
+      titleSemiBold28,
+      titleSemiBold24,
+      headlineMedium21,
+      headlineSemiBold19,
+      headlineRegular19,
+      textSemiBold17,
+      textRegular17,
+      textSemiBold16,
+      textMedium16,
+      textRegular16,
+      textSemiBold15,
+      textRegular15,
+      textSemiBold14,
+      textMedium14,
+      textRegular14);
 
   @JsonKey(ignore: true)
   @override
@@ -395,53 +395,53 @@ class _$_AppTextTheme extends _AppTextTheme {
 
 abstract class _AppTextTheme extends AppTextTheme {
   factory _AppTextTheme(
-      {required final TextStyle displayLarge,
-      required final TextStyle displayMedium,
-      required final TextStyle displaySmall,
-      required final TextStyle headlineLarge,
-      required final TextStyle headlineMedium,
-      required final TextStyle headlineSmall,
-      required final TextStyle titleLarge,
-      required final TextStyle titleMedium,
-      required final TextStyle titleSmall,
-      required final TextStyle bodyLarge,
-      required final TextStyle bodyMedium,
-      required final TextStyle bodySmall,
-      required final TextStyle labelLarge,
-      required final TextStyle labelMedium,
-      required final TextStyle labelSmall}) = _$_AppTextTheme;
+      {required final TextStyle titleSemiBold28,
+      required final TextStyle titleSemiBold24,
+      required final TextStyle headlineMedium21,
+      required final TextStyle headlineSemiBold19,
+      required final TextStyle headlineRegular19,
+      required final TextStyle textSemiBold17,
+      required final TextStyle textRegular17,
+      required final TextStyle textSemiBold16,
+      required final TextStyle textMedium16,
+      required final TextStyle textRegular16,
+      required final TextStyle textSemiBold15,
+      required final TextStyle textRegular15,
+      required final TextStyle textSemiBold14,
+      required final TextStyle textMedium14,
+      required final TextStyle textRegular14}) = _$_AppTextTheme;
   _AppTextTheme._() : super._();
 
   @override
-  TextStyle get displayLarge;
+  TextStyle get titleSemiBold28;
   @override
-  TextStyle get displayMedium;
+  TextStyle get titleSemiBold24;
   @override
-  TextStyle get displaySmall;
+  TextStyle get headlineMedium21;
   @override
-  TextStyle get headlineLarge;
+  TextStyle get headlineSemiBold19;
   @override
-  TextStyle get headlineMedium;
+  TextStyle get headlineRegular19;
   @override
-  TextStyle get headlineSmall;
+  TextStyle get textSemiBold17;
   @override
-  TextStyle get titleLarge;
+  TextStyle get textRegular17;
   @override
-  TextStyle get titleMedium;
+  TextStyle get textSemiBold16;
   @override
-  TextStyle get titleSmall;
+  TextStyle get textMedium16;
   @override
-  TextStyle get bodyLarge;
+  TextStyle get textRegular16;
   @override
-  TextStyle get bodyMedium;
+  TextStyle get textSemiBold15;
   @override
-  TextStyle get bodySmall;
+  TextStyle get textRegular15;
   @override
-  TextStyle get labelLarge;
+  TextStyle get textSemiBold14;
   @override
-  TextStyle get labelMedium;
+  TextStyle get textMedium14;
   @override
-  TextStyle get labelSmall;
+  TextStyle get textRegular14;
   @override
   @JsonKey(ignore: true)
   _$$_AppTextThemeCopyWith<_$_AppTextTheme> get copyWith =>

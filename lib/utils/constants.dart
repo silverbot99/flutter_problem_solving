@@ -6,6 +6,7 @@ import 'package:hive/hive.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
+import '../features/auth/login/blocs/auth_cubit.dart';
 import '../features/dashboard/models/dashboard_choose_emotions.dart';
 import '../features/dashboard/models/data_txt.dart';
 import '../features/dashboard/presentation/research_hive.dart';
@@ -180,6 +181,24 @@ class _Navigation {
           label: context.t.strings.navigation.bottom.informations,
         ),
       ];
+}
+
+enum CustomTextStyle {
+  titleSemiBold28,
+  titleSemiBold24,
+  headlineMedium21,
+  headlineSemiBold19,
+  headlineRegular19,
+  textSemiBold17,
+  textRegular17,
+  textSemiBold16,
+  textMedium16,
+  textRegular16,
+  textSemiBold15,
+  textRegular15,
+  textSemiBold14,
+  textMedium14,
+  textRegular14,
 }
 
 Future<void> setupHive() async {

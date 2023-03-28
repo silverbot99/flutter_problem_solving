@@ -74,7 +74,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4SHJt00BlD9QpVmdesESWvj6eUQ=
+		4Jcbnud3k5Iq2N0hlrSJ99a82ng=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -82,11 +82,11 @@
 		</data>
 		<key>Modules/rive_common.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		l04+sdMEp5Nra0Vzoqv9yp08V50=
+		tHn5iEl2lt2qs2NnI0pcFKLpsjk=
 		</data>
 		<key>Modules/rive_common.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		pDWusS843oauI1g+HkwDQhbjqKk=
+		oe5VbYDzTsFK2kElCU1DSWalRDw=
 		</data>
 		<key>Modules/rive_common.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Modules/rive_common.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		uaWRr70rvJk3/Vl84WJcu27avdc=
+		7TXi87N34fgmIivYbhVhbkyzcVg=
 		</data>
 		<key>Modules/rive_common.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>Modules/rive_common.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ewFxbmNCikAFBzaf7bGPgoSt1I0=
+		YKMQ7WxsaH7yIUOuyOaPqup+kdA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -245,14 +245,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zLRemzEetJYc1cCiG85eUQW79fsjOZMFO+4EKJEdib8=
+			1aCWm8Z/750VhEck+4oQGLI3QvmPWKz2gS6ubzbGrrk=
 			</data>
 		</dict>
 		<key>Modules/rive_common.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			64TsDvUDH//X/JDuOx8QYiEJD6h+QIibp5gJwEJ9f0A=
+			OMzhyywc/R6D44X6Cw/QHXaMJyG8zD2ic5gOf3o4ylo=
 			</data>
 		</dict>
 		<key>Modules/rive_common.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -273,7 +273,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jfbrF+fAYrDhoZ2QwgMoKuveON4QIzAlOs4DZeA6fU0=
+			HvvpKcIND9thNjKqGqE5P0WikeqW94nARLDPtycxG+s=
 			</data>
 		</dict>
 		<key>Modules/rive_common.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -294,7 +294,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PASwIVxLg5r62u6kW/dfBOPW/qR5/PPUZlke9k1ldgw=
+			NSUssRR0nDZ6VFKbFZHwql8UsRGDl8iyuSC99rtDsoc=
 			</data>
 		</dict>
 	</dict>

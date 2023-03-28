@@ -36,7 +36,9 @@ class _StringsLoginEn {
 	final _StringsEn _root; // ignore: unused_field
 
 	// Translations
-	String get login_button => 'Login';
+	String get text_login => 'Login';
+	String get need_help => 'Need help?';
+	String get forget_password => 'Forgot Password';
 }
 
 // Path: strings

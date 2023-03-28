@@ -6,7 +6,9 @@ part of 'strings.g.dart';
 extension on _StringsEn {
 	dynamic _flatMapFunction(String path) {
 		switch (path) {
-			case 'login.login_button': return 'Login';
+			case 'login.text_login': return 'Login';
+			case 'login.need_help': return 'Need help?';
+			case 'login.forget_password': return 'Forgot Password';
 			case 'strings.hello': return ({required Object name}) => 'Hello ${name}';
 			case 'strings.save': return 'Save';
 			case 'strings.login.success': return 'Logged in successfully';
@@ -47,7 +49,9 @@ extension on _StringsEn {
 extension on _StringsVi {
 	dynamic _flatMapFunction(String path) {
 		switch (path) {
-			case 'login.login_button': return 'Đăng nhập';
+			case 'login.text_login': return 'Đăng nhập';
+			case 'login.need_help': return 'Cần giúp đỡ?';
+			case 'login.forget_password': return 'Quên mật khẩu';
 			case 'strings.hello': return ({required Object name}) => 'Chào ${name}';
 			case 'strings.save': return 'Lưu';
 			case 'strings.login.success': return 'Đăng nhập thành công';

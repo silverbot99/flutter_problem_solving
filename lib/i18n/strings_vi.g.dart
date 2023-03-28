@@ -37,7 +37,9 @@ class _StringsLoginVi extends _StringsLoginEn {
 	@override final _StringsVi _root; // ignore: unused_field
 
 	// Translations
-	@override String get login_button => 'Đăng nhập';
+	@override String get text_login => 'Đăng nhập';
+	@override String get need_help => 'Cần giúp đỡ?';
+	@override String get forget_password => 'Quên mật khẩu';
 }
 
 // Path: strings

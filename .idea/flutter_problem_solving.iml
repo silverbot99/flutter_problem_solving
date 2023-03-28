@@ -69,6 +69,8 @@
       <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/sentry_flutter/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/sentry_flutter/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/sentry_flutter/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/admin.xcuserdatad" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/Pods/Headers" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
