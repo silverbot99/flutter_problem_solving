@@ -37,7 +37,9 @@ class _StringsLoginVi extends _StringsLoginEn {
 	@override final _StringsVi _root; // ignore: unused_field
 
 	// Translations
-	@override String get login_button => 'Đăng nhập';
+	@override String get text_login => 'Đăng nhập';
+	@override String get need_help => 'Cần giúp đỡ?';
+	@override String get forget_password => 'Quên mật khẩu';
 }
 
 // Path: strings
@@ -47,8 +49,8 @@ class _StringsStringsVi extends _StringsStringsEn {
 	@override final _StringsVi _root; // ignore: unused_field
 
 	// Translations
-	@override String hello({required Object name}) => 'Chào ${name}';
-	@override String get save => 'Lưu';
+	@override String hello({required Object name}) => 'Hello ${name}';
+	@override String get save => 'Save';
 	@override late final _StringsStringsLoginVi login = _StringsStringsLoginVi._(_root);
 	@override late final _StringsStringsNavigationVi navigation = _StringsStringsNavigationVi._(_root);
 	@override late final _StringsStringsTestVi test = _StringsStringsTestVi._(_root);
@@ -57,6 +59,7 @@ class _StringsStringsVi extends _StringsStringsEn {
 	@override late final _StringsStringsFilePickerVi file_picker = _StringsStringsFilePickerVi._(_root);
 	@override late final _StringsStringsNoFeatureVi no_feature = _StringsStringsNoFeatureVi._(_root);
 	@override late final _StringsStringsDashboardVi dashboard = _StringsStringsDashboardVi._(_root);
+	@override late final _StringsStringsCreateOrderVi create_order = _StringsStringsCreateOrderVi._(_root);
 }
 
 // Path: strings.login
@@ -66,8 +69,8 @@ class _StringsStringsLoginVi extends _StringsStringsLoginEn {
 	@override final _StringsVi _root; // ignore: unused_field
 
 	// Translations
-	@override String get success => 'Đăng nhập thành công';
-	@override String get fail => 'Đăng nhập thất bại';
+	@override String get success => 'Logged in successfully';
+	@override String get fail => 'Logged in failed';
 }
 
 // Path: strings.navigation
@@ -98,8 +101,14 @@ class _StringsStringsFormVi extends _StringsStringsFormEn {
 	@override final _StringsVi _root; // ignore: unused_field
 
 	// Translations
+	@override late final _StringsStringsFormPhoneVi phone = _StringsStringsFormPhoneVi._(_root);
 	@override late final _StringsStringsFormUsernameVi username = _StringsStringsFormUsernameVi._(_root);
 	@override late final _StringsStringsFormPasswordVi password = _StringsStringsFormPasswordVi._(_root);
+	@override late final _StringsStringsFormFullNameVi full_name = _StringsStringsFormFullNameVi._(_root);
+	@override late final _StringsStringsFormTransferAddressVi transfer_address = _StringsStringsFormTransferAddressVi._(_root);
+	@override late final _StringsStringsFormProductNameVi product_name = _StringsStringsFormProductNameVi._(_root);
+	@override late final _StringsStringsFormUnitPriceVi unit_price = _StringsStringsFormUnitPriceVi._(_root);
+	@override late final _StringsStringsFormDeliveryChargesVi delivery_charges = _StringsStringsFormDeliveryChargesVi._(_root);
 }
 
 // Path: strings.errors
@@ -111,6 +120,7 @@ class _StringsStringsErrorsVi extends _StringsStringsErrorsEn {
 	// Translations
 	@override late final _StringsStringsErrorsFormVi form = _StringsStringsErrorsFormVi._(_root);
 	@override late final _StringsStringsErrorsOthersVi others = _StringsStringsErrorsOthersVi._(_root);
+	@override late final _StringsStringsErrorsLoginVi login = _StringsStringsErrorsLoginVi._(_root);
 }
 
 // Path: strings.file_picker
@@ -131,7 +141,7 @@ class _StringsStringsNoFeatureVi extends _StringsStringsNoFeatureEn {
 	@override final _StringsVi _root; // ignore: unused_field
 
 	// Translations
-	@override String get in_progress => 'Chức năng đang trong quá trình phát triển';
+	@override String get in_progress => 'Function in progress';
 }
 
 // Path: strings.dashboard
@@ -141,11 +151,28 @@ class _StringsStringsDashboardVi extends _StringsStringsDashboardEn {
 	@override final _StringsVi _root; // ignore: unused_field
 
 	// Translations
-	@override String get greeting => 'Chào buổi sáng, Silvia';
-	@override String get how_you_feel => 'Bây giờ bạn cảm thấy thế nào?';
-	@override String get description => 'Mô tả vấn đề bạn đang gặp?';
-	@override String get info_problem => 'Tình hình, sự kiện hiện tại, có những thông tin gì?';
-	@override String get hint_write => 'Viết gì đó...';
+	@override String get greeting => 'Welcome, Silvia';
+	@override String get how_you_feel => 'Now, how do you feel?';
+	@override String get description => 'Describe the problem';
+	@override String get info_problem => 'What information is available?';
+	@override String get hint_write => 'Write something...';
+}
+
+// Path: strings.create_order
+class _StringsStringsCreateOrderVi extends _StringsStringsCreateOrderEn {
+	_StringsStringsCreateOrderVi._(_StringsVi root) : this._root = root, super._(root);
+
+	@override final _StringsVi _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'Tạo đơn hàng';
+	@override String get text_information_customer => 'Thông tin khách hàng';
+	@override String get text_information_order => 'Thông tin đơn hàng';
+	@override String get text_continue => 'Tiếp tục';
+	@override String get text_quantity => 'Số lượng';
+	@override String get text_price => 'Thành tiền:';
+	@override String get text_total_price => 'Cộng tiền hàng:';
+	@override String get text_delivery_charges => 'Phí giao hàng:';
 }
 
 // Path: strings.navigation.bottom
@@ -155,10 +182,21 @@ class _StringsStringsNavigationBottomVi extends _StringsStringsNavigationBottomE
 	@override final _StringsVi _root; // ignore: unused_field
 
 	// Translations
-	@override String get sample => 'Mẫu';
-	@override String get home => 'Trang chủ';
-	@override String get features => 'Chức năng';
-	@override String get informations => 'Thông tin';
+	@override String get sample => 'Sample';
+	@override String get home => 'Home';
+	@override String get features => 'Features';
+	@override String get informations => 'Informations';
+}
+
+// Path: strings.form.phone
+class _StringsStringsFormPhoneVi extends _StringsStringsFormPhoneEn {
+	_StringsStringsFormPhoneVi._(_StringsVi root) : this._root = root, super._(root);
+
+	@override final _StringsVi _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Số điện thoại';
+	@override String get hint => 'Nhập số điện thoại';
 }
 
 // Path: strings.form.username
@@ -179,8 +217,63 @@ class _StringsStringsFormPasswordVi extends _StringsStringsFormPasswordEn {
 	@override final _StringsVi _root; // ignore: unused_field
 
 	// Translations
-	@override String get label => 'Password';
-	@override String get hint => 'Nhập password';
+	@override String get label => 'Mật khẩu';
+	@override String get hint => 'Nhập mật khẩu';
+}
+
+// Path: strings.form.full_name
+class _StringsStringsFormFullNameVi extends _StringsStringsFormFullNameEn {
+	_StringsStringsFormFullNameVi._(_StringsVi root) : this._root = root, super._(root);
+
+	@override final _StringsVi _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Họ và tên';
+	@override String get hint => 'Nhập Họ và tên';
+}
+
+// Path: strings.form.transfer_address
+class _StringsStringsFormTransferAddressVi extends _StringsStringsFormTransferAddressEn {
+	_StringsStringsFormTransferAddressVi._(_StringsVi root) : this._root = root, super._(root);
+
+	@override final _StringsVi _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Địa chỉ giao hàng';
+	@override String get hint => 'Nhập Địa chỉ giao hàng';
+}
+
+// Path: strings.form.product_name
+class _StringsStringsFormProductNameVi extends _StringsStringsFormProductNameEn {
+	_StringsStringsFormProductNameVi._(_StringsVi root) : this._root = root, super._(root);
+
+	@override final _StringsVi _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Tên sản phẩm';
+	@override String get hint => 'Nhập Tên sản phẩm';
+}
+
+// Path: strings.form.unit_price
+class _StringsStringsFormUnitPriceVi extends _StringsStringsFormUnitPriceEn {
+	_StringsStringsFormUnitPriceVi._(_StringsVi root) : this._root = root, super._(root);
+
+	@override final _StringsVi _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Đơn giá';
+	@override String get hint => 'Đơn giá';
+}
+
+// Path: strings.form.delivery_charges
+class _StringsStringsFormDeliveryChargesVi extends _StringsStringsFormDeliveryChargesEn {
+	_StringsStringsFormDeliveryChargesVi._(_StringsVi root) : this._root = root, super._(root);
+
+	@override final _StringsVi _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Phí giao hàng';
+	@override String get hint => 'Nhập Phí giao hàng';
 }
 
 // Path: strings.errors.form
@@ -190,10 +283,11 @@ class _StringsStringsErrorsFormVi extends _StringsStringsErrorsFormEn {
 	@override final _StringsVi _root; // ignore: unused_field
 
 	// Translations
-	@override String maxLength({required Object field, required Object count}) => '${field} cannot be more than ${count} characters.';
-	@override String minLength({required Object field, required Object count}) => '${field} cannot be less than ${count} characters.';
-	@override String required({required Object field}) => '${field} is required.';
-	@override String get email => 'You entered an invalid email address.';
+	@override String maxLength({required Object field, required Object count}) => '${field} không thể nhiều hơn ${count} ký tự.';
+	@override String minLength({required Object field, required Object count}) => '${field} không thể ít hơn ${count} ký tự.';
+	@override String required({required Object field}) => 'Vui lòng nhập ${field}';
+	@override String get email => 'Địa chỉ Email không hợp lệ.';
+	@override String pattern({required Object field}) => '${field} không hợp lệ.';
 }
 
 // Path: strings.errors.others
@@ -209,4 +303,16 @@ class _StringsStringsErrorsOthersVi extends _StringsStringsErrorsOthersEn {
 	@override String get no_internet_connection => 'Internet connectivity is not available.';
 	@override String get server_failure => 'Server failure encountered.';
 	@override String get communication_error => 'There was an error with our communication with the servers.';
+}
+
+// Path: strings.errors.login
+class _StringsStringsErrorsLoginVi extends _StringsStringsErrorsLoginEn {
+	_StringsStringsErrorsLoginVi._(_StringsVi root) : this._root = root, super._(root);
+
+	@override final _StringsVi _root; // ignore: unused_field
+
+	// Translations
+	@override String get E_USER_ACCOUNT_NOT_EXISTS => 'Vui lòng kiểm tra lại mật khẩu';
+	@override String get E_USER_HAS_BLOCKED => 'User đã bị khoá';
+	@override String get E_USER_NOT_EXISTS => 'User không tồn tại';
 }

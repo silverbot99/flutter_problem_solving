@@ -83,6 +83,7 @@ dependencies:
   rive: ^0.10.0
   hive: ^2.2.3
   hive_flutter: ^1.1.0
+  flutter_svg: ^2.0.5
 
 dev_dependencies:
   flutter_test:
@@ -126,6 +127,7 @@ flutter:
     - assets/images/auth/
     - assets/images/github/
     - assets/images/splash/
+    - assets/images/dashboard/
     - assets/configs/
 
   # To add custom fonts to your application, add a fonts section here,
@@ -133,26 +135,18 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font.
   fonts:
-    - family: Roboto_Slab
+    - family: Montserrat
       fonts:
-        - asset: assets/fonts/Roboto_Slab/RobotoSlab-Black.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Montserrat/Montserrat-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Montserrat/Montserrat-Medium.ttf
           weight: 500
-        - asset: assets/fonts/Roboto_Slab/RobotoSlab-Bold.ttf
-          weight: 500
-        - asset: assets/fonts/Roboto_Slab/RobotoSlab-ExtraBold.ttf
-          weight: 500
-        - asset: assets/fonts/Roboto_Slab/RobotoSlab-ExtraLight.ttf
-          weight: 500
-        - asset: assets/fonts/Roboto_Slab/RobotoSlab-Light.ttf
-          weight: 500
-        - asset: assets/fonts/Roboto_Slab/RobotoSlab-Medium.ttf
-          weight: 500
-        - asset: assets/fonts/Roboto_Slab/RobotoSlab-Regular.ttf
-          weight: 500
-        - asset: assets/fonts/Roboto_Slab/RobotoSlab-SemiBold.ttf
-          weight: 500
-        - asset: assets/fonts/Roboto_Slab/RobotoSlab-Thin.ttf
-          weight: 500
+        - asset: assets/fonts/Montserrat/Montserrat-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Montserrat/Montserrat-Italic.ttf
+          style: italic
 
 # Native splash screen settings.
 flutter_native_splash:

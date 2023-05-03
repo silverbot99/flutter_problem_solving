@@ -92,7 +92,13 @@ To clone and run this boilerplate, you'll need [Git](https://git-scm.com) and [F
 ```bash
 # Install dependencies
 $ flutter pub get
-$ flutter pub upgrade --major-versions
+
+# Install dependencies For ios
+$ cd ios
+$ pod install
+
+# Build apk
+$ flutter build apk --release
 
 # Generate structured language files
 $ flutter pub run slang
@@ -106,12 +112,11 @@ $ flutter packages pub run build_runner build -d
 # Update goldens & Execute tests
 $ flutter test --update-goldens
 
+# Update dependencies
+$ flutter pub upgrade --major-versions
+
 # Run the app
 $ flutter run
-
-# Run the app on web
-$ flutter run -d chrome --web-renderer html (low performance, low download size)
-$ flutter run -d chrome --web-renderer canvaskit (high performance, high download size)
 
 # If you update your splash screen configuration you can regenerate it via
 $ flutter pub run flutter_native_splash:create

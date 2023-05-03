@@ -11,6 +11,7 @@ import 'package:sentry_flutter/sentry_flutter.dart';
 import 'package:statsfl/statsfl.dart';
 
 import '../../theme/text/app_typography.dart';
+import '../../utils/methods/shortcuts.dart';
 
 class App extends StatelessWidget {
   App({super.key});
@@ -31,8 +32,25 @@ class App extends StatelessWidget {
             return MaterialApp.router(
               /// Theme configuration.
               theme: ThemeData(
+                // colorScheme: ColorScheme.fromSeed(seedColor: $constants.theme.defaultThemeColor),
+                scaffoldBackgroundColor: Colors.white,
                 textTheme: appTypography.black.materialTextTheme,
                 typography: appTypography.materialTypography,
+                inputDecorationTheme: InputDecorationTheme(
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                        color: $constants.theme.defaultThemeColor, width: 2),
+                  ),
+                ),
+                appBarTheme: AppBarTheme(
+                  backgroundColor: Colors.white,
+                  titleTextStyle:
+                  getTextStyle(context, CustomTextStyle.title1SemiBold24),
+                  centerTitle: false,
+                  iconTheme: const IconThemeData(
+                    color: Colors.black,
+                  ),
+                ),
               ),
 
               /// Environment configuration.

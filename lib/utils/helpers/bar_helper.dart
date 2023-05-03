@@ -9,10 +9,11 @@ abstract class BarHelper {
   const BarHelper._();
 
   static void showAlert(
-    BuildContext context, {
-    required AlertModel alert,
-    bool isTest = false,
-  }) {
+      BuildContext context, {
+        required AlertModel alert,
+        BarPosition barPosition = BarPosition.top,
+        bool isTest = false,
+      }) {
     Bar<void> bar;
     final message = alert.translatable ? (context.t[alert.message] as String) : alert.message;
 
@@ -24,6 +25,7 @@ abstract class BarHelper {
           color: Colors.white,
         ),
         color: const Color(0xFF40DBA3),
+        barPosition: barPosition,
         isTest: isTest,
       );
     } else if (alert.type == AlertType.destructive) {
@@ -34,17 +36,20 @@ abstract class BarHelper {
           color: Colors.white,
         ),
         color: const Color(0xFFE4756D),
+        barPosition: barPosition,
       );
     } else if (alert.type == AlertType.error) {
       bar = _createAlertModal(
         message: message,
         iconWidget: const SizedBox(),
         color: Colors.red,
+        barPosition: barPosition,
       );
     } else if (alert.type == AlertType.notification) {
       bar = _createAlertModal(
         message: message,
         color: Colors.grey,
+        barPosition: barPosition,
         iconWidget: Container(
           height: 24,
           width: 24,
@@ -63,6 +68,7 @@ abstract class BarHelper {
         message: message,
         iconWidget: const SizedBox(),
         color: Colors.red,
+        barPosition: barPosition,
       );
     }
 
@@ -83,13 +89,14 @@ abstract class BarHelper {
     required Widget iconWidget,
     required Color color,
     String? title,
+    BarPosition barPosition = BarPosition.top,
     bool isTest = false,
     Duration duration = const Duration(seconds: 3),
   }) {
     return Bar<void>(
       title: title,
       message: message,
-      barPosition: BarPosition.top,
+      barPosition: barPosition,
       icon: Padding(
         padding: const EdgeInsets.all(8),
         child: iconWidget,

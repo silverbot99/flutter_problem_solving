@@ -10,6 +10,57 @@ class R {
 
 class _ImageResources {
   const _ImageResources();
+
+  /// ![](/Users/nganhuynh/flutter_problem_solving/assets/images/auth/ic_cancel_x.png)
+  final ic_cancel_x = r'assets/images/auth/ic_cancel_x.png';
+
+  /// ![](/Users/nganhuynh/flutter_problem_solving/assets/images/github/web_system_light_tr.png)
+  final web_system_light_tr = r'assets/images/github/web_system_light_tr.png';
+
+  /// ![](/Users/nganhuynh/flutter_problem_solving/assets/images/github/ios_light_tr.png)
+  final ios_light_tr = r'assets/images/github/ios_light_tr.png';
+
+  /// ![](/Users/nganhuynh/flutter_problem_solving/assets/images/github/web_dark_en.png)
+  final web_dark_en = r'assets/images/github/web_dark_en.png';
+
+  /// ![](/Users/nganhuynh/flutter_problem_solving/assets/images/github/android_dark_en.png)
+  final android_dark_en = r'assets/images/github/android_dark_en.png';
+
+  /// ![](/Users/nganhuynh/flutter_problem_solving/assets/images/splash/splash_speech_bubble.png)
+  final splash_speech_bubble = r'assets/images/splash/splash_speech_bubble.png';
+
+  /// ![](/Users/nganhuynh/flutter_problem_solving/assets/images/splash/splash_logo_dark.png)
+  final splash_logo_dark = r'assets/images/splash/splash_logo_dark.png';
+
+  /// ![](/Users/nganhuynh/flutter_problem_solving/assets/images/splash/splash_logo_papmall.png)
+  final splash_logo_papmall = r'assets/images/splash/splash_logo_papmall.png';
+
+  /// ![](/Users/nganhuynh/flutter_problem_solving/assets/images/splash/splash_logo_light.png)
+  final splash_logo_light = r'assets/images/splash/splash_logo_light.png';
+
+  /// ![](/Users/nganhuynh/flutter_problem_solving/assets/images/dashboard/ic_decrease_green.svg)
+  final ic_decrease_green = r'assets/images/dashboard/ic_decrease_green.svg';
+
+  /// ![](/Users/nganhuynh/flutter_problem_solving/assets/images/dashboard/ic_decrease_gray.svg)
+  final ic_decrease_gray = r'assets/images/dashboard/ic_decrease_gray.svg';
+
+  /// ![](/Users/nganhuynh/flutter_problem_solving/assets/images/dashboard/ic_dropdown_green.svg)
+  final ic_dropdown_green = r'assets/images/dashboard/ic_dropdown_green.svg';
+
+  /// ![](/Users/nganhuynh/flutter_problem_solving/assets/images/dashboard/ic_reload_green.svg)
+  final ic_reload_green = r'assets/images/dashboard/ic_reload_green.svg';
+
+  /// ![](/Users/nganhuynh/flutter_problem_solving/assets/images/dashboard/bg_empty_order.png)
+  final bg_empty_order = r'assets/images/dashboard/bg_empty_order.png';
+
+  /// ![](/Users/nganhuynh/flutter_problem_solving/assets/images/dashboard/ic_add_green.svg)
+  final ic_add_green = r'assets/images/dashboard/ic_add_green.svg';
+
+  /// ![](/Users/nganhuynh/flutter_problem_solving/assets/images/dashboard/ic_check_white.svg)
+  final ic_check_white = r'assets/images/dashboard/ic_check_white.svg';
+
+  /// ![](/Users/nganhuynh/flutter_problem_solving/assets/images/dashboard/ic_store.png)
+  final ic_store = r'assets/images/dashboard/ic_store.png';
 }
 
 class _SvgResources {

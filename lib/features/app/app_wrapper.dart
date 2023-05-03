@@ -41,7 +41,10 @@ class _AppWrapperState extends State<AppWrapper> with WidgetsBindingObserver {
       child: BlocListener<AuthCubit, AuthState>(
         listener: (context, state) {
           // Remove splash screen after initialization.
-          FlutterNativeSplash.remove();
+          // FlutterNativeSplash.remove();
+          Future.delayed(Duration.zero, () {
+            FlutterNativeSplash.remove();
+          });
 
           state.whenOrNull(
             authenticated: (_) {
