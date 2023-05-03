@@ -44,7 +44,8 @@ class _CustomButtonState extends State<CustomButton> {
       animateOnTap: widget.animateOnTap,
       child: AutoSizeText(
         widget.text,
-        style: getTextTheme(context).titleMedium!.apply(color: Colors.white),
+        style: getTextStyle(context, CustomTextStyle.headlineRegular19).apply(color: Colors.white),
+        // style: getTextTheme(context).titleMedium!.apply(color: Colors.white),
       ),
     );
   }
