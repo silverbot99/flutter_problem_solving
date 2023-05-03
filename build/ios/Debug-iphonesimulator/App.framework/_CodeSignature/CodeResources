@@ -6,11 +6,15 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		fc6zw9RcS2EhVeYSXxnG8fqz+X8=
+		85iaADE5tc/NukRC+KGdiZaZ0ZA=
+		</data>
+		<key>flutter_assets/AssetManifest.bin</key>
+		<data>
+		q96cwLALnMJtFk5kpaEz2xpcc6g=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		20DUQikzuwM6krcHlmLX0O3M/QE=
+		QsGVkE3iFe+uFOHu+1xaIirx3HA=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -18,7 +22,7 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		lXmhvyMfjH4V8iW+pkQ1GD9PgFk=
+		0E1o7ZW8s7so+PzUZympmWzdLZ0=
 		</data>
 		<key>flutter_assets/assets/configs/dev.json</key>
 		<data>
@@ -68,6 +72,10 @@
 		<data>
 		r6tOaa3qbrh4QsdRKevtHeOH2Fw=
 		</data>
+		<key>flutter_assets/assets/images/auth/ic_cancel_x.png</key>
+		<data>
+		Ewa7j7whbhK3daq8H+L/zwBL+CQ=
+		</data>
 		<key>flutter_assets/assets/images/github/android_dark_en.png</key>
 		<data>
 		y0hmvtFHzmUIs/nQFp39Wv8I3tI=
@@ -92,17 +100,25 @@
 		<data>
 		iqiJJuBtgsR4dT/UmjawI5e/qzg=
 		</data>
+		<key>flutter_assets/assets/images/splash/splash_logo_papmall.png</key>
+		<data>
+		cMm7Uu1+fHWyw6Hn15KYdAClEQ4=
+		</data>
+		<key>flutter_assets/assets/images/splash/splash_speech_bubble.png</key>
+		<data>
+		Re8YXxdjtDqZdwNIds8vc9HsKbE=
+		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
 		/CUoTuPQqqdexfyOT9lpJhV+2MQ=
 		</data>
 		<key>flutter_assets/isolate_snapshot_data</key>
 		<data>
-		qwXEtJRk7mlLgItOslIsPgCpnMo=
+		Tr1NIxh6rDHpuBtkc37kLeB8Rt4=
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		b73G6GXyzAUK9g3+Onl6eOUziZg=
+		T9OJ682vm3Y01D4S4FJVh3g3L0k=
 		</data>
 		<key>flutter_assets/packages/golden_toolkit/fonts/Roboto-Regular.ttf</key>
 		<data>
@@ -110,24 +126,31 @@
 		</data>
 		<key>flutter_assets/packages/material_design_icons_flutter/lib/fonts/materialdesignicons-webfont.ttf</key>
 		<data>
-		aOk3PGfYI4P3UxgCz4Ny3Zs6JXo=
+		tTz2yBYKgZ8c4mFUQ67+8j6eo8Y=
 		</data>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>
 		<data>
-		Z/DhfUUahgFGsthszkW1YubfdU8=
+		KL+7f3IYR/Y9WDlxxUeDmgGoluc=
 		</data>
 		<key>flutter_assets/vm_snapshot_data</key>
 		<data>
-		V9G/uHXrcGQn+PgTQXuhbABDuIQ=
+		msHWj6pBYtG4O1qAd6MjUJeX8Zk=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>flutter_assets/AssetManifest.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			f4KSY0J45gqRPFr48CZ2o15BF9hUhr1dI+zBtrliI9s=
+			</data>
+		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9ndTw02NivoAitoPa3UWUfcbmwQ7gzh/L0lByUd+7Pw=
+			2XlgK6vxkiuBbdVhXtMwdGlkpLyCaKsZUieHX+BNeho=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -141,7 +164,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z2YbnR/jF72OdjslZJp1TH4NHg+zDPPo0TaOZYGw+0k=
+			R2ZSN+bGgo4yfrQWgZCTdHQaPopoiuwlRS5HQUqKXG4=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/configs/dev.json</key>
@@ -228,6 +251,13 @@
 			KLFw0umx+EhPK8dGvLDGYAMxSTfj0sfKvX4Xa8S43dc=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/images/auth/ic_cancel_x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eN4HWwNywWQzyqFx/OKIhEax4tQDSQ2LMHJ3n8D9bic=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/images/github/android_dark_en.png</key>
 		<dict>
 			<key>hash2</key>
@@ -270,6 +300,20 @@
 			tLP6y2IxQ1C2RyW8o0ULMsqUd41B70YTvRPAJAqngQw=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/images/splash/splash_logo_papmall.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FQ1WeXc4GzUpUDXDB/8Hhwkl/1UU4je0x9FezQhWcCY=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/splash/splash_speech_bubble.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			crKpZAqUub8SVTyJY6dMyGZVYuuNmDKXMH2lj1QsH5E=
+			</data>
+		</dict>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<dict>
 			<key>hash2</key>
@@ -281,14 +325,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3i+viYHUoOzbJiXOE+6Kv9v50pCc7aLox60myZafWgs=
+			63Mzu9yHRhZhx4S5MFXn1zyXw5dzjKIltqYiPxQQ4S0=
 			</data>
 		</dict>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fNHU8ZefVuMboxRNGsyHEt6POPwn/m/vaA15gUoNduA=
+			hJwXCn4/F6sKz6wHFhp5MozzS+3Xt+zaGxupJf0KQFQ=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/golden_toolkit/fonts/Roboto-Regular.ttf</key>
@@ -302,21 +346,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lI/OUnH9auciRkx6X3WBvMZtfsAfjn0Wkjv6e6AwVBk=
+			vXJaejiTnltZkE4benJlkZ7OwlYWbs5p1RXCEAUWWQc=
 			</data>
 		</dict>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hgGex10sKxTSC95tzLdljzYd3qnntuSb96YXXaU9Nlc=
+			v6u8YtYjslOLIIb1rrgcOW817fxVEiBaprKuV+f6FpY=
 			</data>
 		</dict>
 		<key>flutter_assets/vm_snapshot_data</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nWq1aNEKC9niPkb/dkxvVAXGPtA9sABgF5zCixulClM=
+			KIF4fKrlxt2xhajT4aRXAOTOYyctPxeDg4le3IN4Iwo=
 			</data>
 		</dict>
 	</dict>

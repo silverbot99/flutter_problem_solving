@@ -2,7 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_problem_solving/features/dashboard/presentation/dashboard_screen.dart';
 import 'package:flutter_problem_solving/features/no_feature/presentation/no_feature_screen.dart';
 import 'package:flutter_problem_solving/i18n/strings.g.dart';
+import 'package:hive/hive.dart';
+import 'package:hive_flutter/adapters.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+
+import '../features/auth/login/blocs/auth_cubit.dart';
+import '../features/create_order/presentation/create_order_screen.dart';
+import '../features/dashboard/models/dashboard_choose_emotions.dart';
+import '../features/dashboard/models/data_txt.dart';
+import '../features/dashboard/presentation/research_hive.dart';
+import '../modules/dependency_injection/di.dart';
 
 final $constants = Constants();
 
@@ -106,10 +115,11 @@ class _Palette {
 @immutable
 class _Theme {
   final tryToGetColorPaletteFromWallpaper = true;
-  final defaultThemeColor = const Color(0xFF0000FF);
+  final defaultThemeColor = Color(0xFF008c8c);
+  final defaultColorDisable = Color(0xFFb3b3b3);
   final defaultFontFamily = 'Roboto_Slab';
   final double defaultElevation = 0;
-  final double defaultBorderRadius = 24;
+  final double defaultBorderRadius = 8;
 }
 
 @immutable
@@ -123,13 +133,12 @@ class _Navigation {
   List<AppBar> appbars(BuildContext context) => [
         AppBar(
           title: Text(
-            context.t.strings.navigation.bottom.sample,
+            context.t.strings.navigation.bottom.home,
           ),
         ),
         AppBar(
           leading: IconButton(
-            // onPressed: () => getIt<AuthCubit>().logOut(),
-            onPressed: () {},
+            onPressed: () => getIt<AuthCubit>().logOut(),
             icon: const Icon(MdiIcons.logout),
           ),
           title: Text(
@@ -145,9 +154,10 @@ class _Navigation {
 
   /// Bottom navigation configuration.
   List<Widget> bottomNavigationScreens() => const [
-        DashboardScreen(),
+        CreateOrderScreen(),
         NoFeatureScreen(),
-        NoFeatureScreen()
+        // NoFeatureScreen(),
+        SettingsPage(),
       ];
 
   List<NavigationDestination> bottomNavigationItems(BuildContext context) => [
@@ -156,7 +166,7 @@ class _Navigation {
             MdiIcons.apple,
             size: 24,
           ),
-          label: context.t.strings.navigation.bottom.sample,
+          label: context.t.strings.navigation.bottom.home,
         ),
         NavigationDestination(
           icon: const Icon(
@@ -173,4 +183,29 @@ class _Navigation {
           label: context.t.strings.navigation.bottom.informations,
         ),
       ];
+}
+
+Future<void> setupHive() async {
+  await Hive.initFlutter();
+
+  await Hive.openBox<int>('tutorial');
+  await Hive.openBox<ChooseEmotionsEnum>('emotion');
+  await Hive.openBox<List<DataTXT>>('problem_list_data');
+}
+enum CustomTextStyle {
+  heading1Bold40,
+  heading2Bold32,
+  heading3Bold24,
+  heading4Bold20,
+  heading5Bold16,
+  heading6Bold14,
+  title1SemiBold24,
+  title2SemiBold20,
+  subtitle1Medium20,
+  subtitle2Medium16,
+  body1Regular16,
+  body2Regular14,
+  text1Italic16,
+  text2ExtraRegular12,
+  text3ExtraRegular12,
 }

@@ -1,9 +1,9 @@
 /// Generated file. Do not edit.
 ///
 /// Locales: 2
-/// Strings: 2 (1 per locale)
+/// Strings: 6 (3 per locale)
 ///
-/// Built on 2023-02-11 at 14:38 UTC
+/// Built on 2023-05-03 at 07:37 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -70,10 +70,7 @@ class Translations {
 
 /// The provider for method B
 class TranslationProvider extends BaseTranslationProvider<AppLocale, _StringsEn> {
-	TranslationProvider({required super.child}) : super(
-		initLocale: LocaleSettings.instance.currentLocale,
-		initTranslations: LocaleSettings.instance.currentTranslations,
-	);
+	TranslationProvider({required super.child}) : super(settings: LocaleSettings.instance);
 
 	static InheritedLocaleData<AppLocale, _StringsEn> of(BuildContext context) => InheritedLocaleData.of<AppLocale, _StringsEn>(context);
 }
@@ -96,8 +93,8 @@ class LocaleSettings extends BaseFlutterLocaleSettings<AppLocale, _StringsEn> {
 	// static aliases (checkout base methods for documentation)
 	static AppLocale get currentLocale => instance.currentLocale;
 	static Stream<AppLocale> getLocaleStream() => instance.getLocaleStream();
-	static AppLocale setLocale(AppLocale locale) => instance.setLocale(locale);
-	static AppLocale setLocaleRaw(String rawLocale) => instance.setLocaleRaw(rawLocale);
+	static AppLocale setLocale(AppLocale locale, {bool? listenToDeviceLocale = false}) => instance.setLocale(locale, listenToDeviceLocale: listenToDeviceLocale);
+	static AppLocale setLocaleRaw(String rawLocale, {bool? listenToDeviceLocale = false}) => instance.setLocaleRaw(rawLocale, listenToDeviceLocale: listenToDeviceLocale);
 	static AppLocale useDeviceLocale() => instance.useDeviceLocale();
 	@Deprecated('Use [AppLocaleUtils.supportedLocales]') static List<Locale> get supportedLocales => instance.supportedLocales;
 	@Deprecated('Use [AppLocaleUtils.supportedLocalesRaw]') static List<String> get supportedLocalesRaw => instance.supportedLocalesRaw;
@@ -150,7 +147,9 @@ class _StringsEn implements BaseTranslations<AppLocale, _StringsEn> {
 	late final _StringsEn _root = this; // ignore: unused_field
 
 	// Translations
-	String get login_button => 'Login';
+	String get text_login => 'Login';
+	String get need_help => 'Need help?';
+	String get forget_password => 'Forgot Password';
 }
 
 // Path: <root>
@@ -178,7 +177,9 @@ class _StringsVi implements _StringsEn {
 	@override late final _StringsVi _root = this; // ignore: unused_field
 
 	// Translations
-	@override String get login_button => 'Đăng nhập';
+	@override String get text_login => 'Đăng nhập';
+	@override String get need_help => 'Cần giúp đỡ?';
+	@override String get forget_password => 'Quên mật khẩu';
 }
 
 /// Flat map(s) containing all translations.
@@ -187,7 +188,9 @@ class _StringsVi implements _StringsEn {
 extension on _StringsEn {
 	dynamic _flatMapFunction(String path) {
 		switch (path) {
-			case 'login_button': return 'Login';
+			case 'text_login': return 'Login';
+			case 'need_help': return 'Need help?';
+			case 'forget_password': return 'Forgot Password';
 			default: return null;
 		}
 	}
@@ -196,7 +199,9 @@ extension on _StringsEn {
 extension on _StringsVi {
 	dynamic _flatMapFunction(String path) {
 		switch (path) {
-			case 'login_button': return 'Đăng nhập';
+			case 'text_login': return 'Đăng nhập';
+			case 'need_help': return 'Cần giúp đỡ?';
+			case 'forget_password': return 'Quên mật khẩu';
 			default: return null;
 		}
 	}

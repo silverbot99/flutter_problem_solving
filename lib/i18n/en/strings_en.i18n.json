@@ -8,6 +8,7 @@
   "navigation": {
     "bottom": {
       "sample": "Sample",
+      "home": "Home",
       "features": "Features",
       "informations": "Informations"
     }
@@ -17,21 +18,46 @@
     "failed": "Test failed."
   },
   "form": {
+    "phone": {
+      "label": "Số điện thoại",
+      "hint": "Nhập số điện thoại"
+    },
     "username": {
       "label": "Username",
-      "hint": "Enter your username"
+      "hint": "Vui lòng nhập username"
     },
     "password": {
-      "label": "Password",
-      "hint": "Enter your password"
+      "label": "Mật khẩu",
+      "hint": "Nhập mật khẩu"
+    },
+    "full_name": {
+      "label": "Họ và tên",
+      "hint": "Nhập Họ và tên"
+    },
+    "transfer_address": {
+      "label": "Địa chỉ giao hàng",
+      "hint": "Nhập Địa chỉ giao hàng"
+    },
+    "product_name": {
+      "label": "Tên sản phẩm",
+      "hint": "Nhập Tên sản phẩm"
+    },
+    "unit_price": {
+      "label": "Đơn giá",
+      "hint": "Đơn giá"
+    },
+    "delivery_charges": {
+      "label": "Phí giao hàng",
+      "hint": "Nhập Phí giao hàng"
     }
   },
   "errors": {
     "form": {
-      "maxLength": "$field cannot be more than $count characters.",
-      "minLength": "$field cannot be less than $count characters.",
-      "required": "$field is required.",
-      "email": "You entered an invalid email address."
+      "maxLength": "$field không thể nhiều hơn $count ký tự.",
+      "minLength": "$field không thể ít hơn $count ký tự.",
+      "required": "Vui lòng nhập $field",
+      "email": "Địa chỉ Email không hợp lệ.",
+      "pattern": "$field không hợp lệ."
     },
     "others": {
       "no_item_found": "There is no data to show.",
@@ -40,6 +66,11 @@
       "no_internet_connection": "Internet connectivity is not available.",
       "server_failure": "Server failure encountered.",
       "communication_error": "There was an error with our communication with the servers."
+    },
+    "login": {
+      "E_USER_ACCOUNT_NOT_EXISTS": "Vui lòng kiểm tra lại mật khẩu",
+      "E_USER_HAS_BLOCKED": "User đã bị khoá",
+      "E_USER_NOT_EXISTS": "User không tồn tại"
     }
   },
   "file_picker": {
@@ -48,5 +79,22 @@
   },
   "no_feature": {
     "in_progress": "Function in progress"
+  },
+  "dashboard": {
+    "greeting": "Welcome, Silvia",
+    "how_you_feel": "Now, how do you feel?",
+    "description":  "Describe the problem",
+    "info_problem": "What information is available?",
+    "hint_write": "Write something..."
+  },
+  "create_order" : {
+    "title": "Tạo đơn hàng",
+    "text_information_customer": "Thông tin khách hàng",
+    "text_information_order": "Thông tin đơn hàng",
+    "text_continue": "Tiếp tục",
+    "text_quantity": "Số lượng",
+    "text_price": "Thành tiền:",
+    "text_total_price": "Cộng tiền hàng:",
+    "text_delivery_charges": "Phí giao hàng:"
   }
 }

@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'app_cubit.dart';
 
@@ -17,7 +17,6 @@ final _privateConstructorUsedError = UnsupportedError(
 /// @nodoc
 mixin _$AppState {
   int get pageIndex => throw _privateConstructorUsedError;
-  ThemeModel get theme => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $AppStateCopyWith<AppState> get copyWith =>
@@ -29,9 +28,7 @@ abstract class $AppStateCopyWith<$Res> {
   factory $AppStateCopyWith(AppState value, $Res Function(AppState) then) =
       _$AppStateCopyWithImpl<$Res, AppState>;
   @useResult
-  $Res call({int pageIndex, ThemeModel theme});
-
-  $ThemeModelCopyWith<$Res> get theme;
+  $Res call({int pageIndex});
 }
 
 /// @nodoc
@@ -48,26 +45,13 @@ class _$AppStateCopyWithImpl<$Res, $Val extends AppState>
   @override
   $Res call({
     Object? pageIndex = null,
-    Object? theme = null,
   }) {
     return _then(_value.copyWith(
       pageIndex: null == pageIndex
           ? _value.pageIndex
           : pageIndex // ignore: cast_nullable_to_non_nullable
               as int,
-      theme: null == theme
-          ? _value.theme
-          : theme // ignore: cast_nullable_to_non_nullable
-              as ThemeModel,
     ) as $Val);
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $ThemeModelCopyWith<$Res> get theme {
-    return $ThemeModelCopyWith<$Res>(_value.theme, (value) {
-      return _then(_value.copyWith(theme: value) as $Val);
-    });
   }
 }
 
@@ -78,10 +62,7 @@ abstract class _$$_AppStateCopyWith<$Res> implements $AppStateCopyWith<$Res> {
       __$$_AppStateCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({int pageIndex, ThemeModel theme});
-
-  @override
-  $ThemeModelCopyWith<$Res> get theme;
+  $Res call({int pageIndex});
 }
 
 /// @nodoc
@@ -96,17 +77,12 @@ class __$$_AppStateCopyWithImpl<$Res>
   @override
   $Res call({
     Object? pageIndex = null,
-    Object? theme = null,
   }) {
     return _then(_$_AppState(
       pageIndex: null == pageIndex
           ? _value.pageIndex
           : pageIndex // ignore: cast_nullable_to_non_nullable
               as int,
-      theme: null == theme
-          ? _value.theme
-          : theme // ignore: cast_nullable_to_non_nullable
-              as ThemeModel,
     ));
   }
 }
@@ -114,16 +90,14 @@ class __$$_AppStateCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_AppState implements _AppState {
-  const _$_AppState({required this.pageIndex, required this.theme});
+  const _$_AppState({required this.pageIndex});
 
   @override
   final int pageIndex;
-  @override
-  final ThemeModel theme;
 
   @override
   String toString() {
-    return 'AppState(pageIndex: $pageIndex, theme: $theme)';
+    return 'AppState(pageIndex: $pageIndex)';
   }
 
   @override
@@ -132,12 +106,11 @@ class _$_AppState implements _AppState {
         (other.runtimeType == runtimeType &&
             other is _$_AppState &&
             (identical(other.pageIndex, pageIndex) ||
-                other.pageIndex == pageIndex) &&
-            (identical(other.theme, theme) || other.theme == theme));
+                other.pageIndex == pageIndex));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, pageIndex, theme);
+  int get hashCode => Object.hash(runtimeType, pageIndex);
 
   @JsonKey(ignore: true)
   @override
@@ -147,14 +120,10 @@ class _$_AppState implements _AppState {
 }
 
 abstract class _AppState implements AppState {
-  const factory _AppState(
-      {required final int pageIndex,
-      required final ThemeModel theme}) = _$_AppState;
+  const factory _AppState({required final int pageIndex}) = _$_AppState;
 
   @override
   int get pageIndex;
-  @override
-  ThemeModel get theme;
   @override
   @JsonKey(ignore: true)
   _$$_AppStateCopyWith<_$_AppState> get copyWith =>

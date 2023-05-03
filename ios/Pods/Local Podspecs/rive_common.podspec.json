@@ -22,7 +22,7 @@
     "rive-cpp/src/renderer.cpp",
     "rive-cpp/src/text/font_hb.cpp",
     "rive-cpp/src/text/line_breaker.cpp",
-    "rive-cpp/src/text/text.cpp",
+    "rive-cpp/src/text/text_engine.cpp",
     "harfbuzz/src/hb-aat-layout.cc",
     "harfbuzz/src/hb-aat-map.cc",
     "harfbuzz/src/hb-blob.cc",

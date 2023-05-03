@@ -35,6 +35,7 @@ class _CustomButtonState extends State<CustomButton> {
       elevation: $constants.theme.defaultElevation,
       width: widget.width,
       height: widget.height,
+      borderRadius: $constants.theme.defaultBorderRadius,
       color: widget.onPressed != null ? getCustomOnPrimaryColor(context) : getPrimaryColor(context),
       controller: widget.controller,
       onPressed: widget.onPressed,
@@ -43,7 +44,8 @@ class _CustomButtonState extends State<CustomButton> {
       animateOnTap: widget.animateOnTap,
       child: AutoSizeText(
         widget.text,
-        style: getTextTheme(context).titleMedium!.apply(color: Colors.white),
+        style: getTextStyle(context, CustomTextStyle.body1Regular16).apply(color: Colors.white),
+        // style: getTextTheme(context).titleMedium!.apply(color: Colors.white),
       ),
     );
   }

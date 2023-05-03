@@ -15,6 +15,8 @@ import 'package:sentry_flutter/sentry_flutter.dart';
 import 'package:universal_platform/universal_platform.dart';
 import 'package:url_strategy/url_strategy.dart';
 
+import 'utils/constants.dart';
+
 Future<void> main() async {
   await runZonedGuarded<Future<void>>(
     () async {
@@ -31,6 +33,9 @@ Future<void> main() async {
       // Configures dependency injection to init modules and singletons.
       await configureDependencyInjection();
 
+      // Configures Hive databases.
+      await setupHive();
+
       if (UniversalPlatform.isAndroid) {
         // Increases android devices preferred refresh rate to its maximum.
         await FlutterDisplayMode.setHighRefreshRate();
@@ -44,13 +49,13 @@ Future<void> main() async {
       }
 
       // Sets system overylay style.
-      await SystemChrome.setEnabledSystemUIMode(
-        SystemUiMode.manual,
-        overlays: [
-          SystemUiOverlay.top,
-          SystemUiOverlay.bottom,
-        ],
-      );
+      // await SystemChrome.setEnabledSystemUIMode(
+      //   SystemUiMode.manual,
+      //   overlays: [
+      //     SystemUiOverlay.top,
+      //     SystemUiOverlay.bottom,
+      //   ],
+      // );
 
       // This setting smoothes transition color for LinearGradient.
       Paint.enableDithering = true;
@@ -70,7 +75,7 @@ Future<void> main() async {
         DefaultAssetBundle(
           bundle: SentryAssetBundle(),
           child: TranslationProvider(
-            child: const App(),
+            child: App(),
           ),
         ),
       );

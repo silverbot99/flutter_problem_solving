@@ -36,7 +36,9 @@ class _StringsLoginEn {
 	final _StringsEn _root; // ignore: unused_field
 
 	// Translations
-	String get login_button => 'Login';
+	String get text_login => 'Login';
+	String get need_help => 'Need help?';
+	String get forget_password => 'Forgot Password';
 }
 
 // Path: strings
@@ -55,6 +57,8 @@ class _StringsStringsEn {
 	late final _StringsStringsErrorsEn errors = _StringsStringsErrorsEn._(_root);
 	late final _StringsStringsFilePickerEn file_picker = _StringsStringsFilePickerEn._(_root);
 	late final _StringsStringsNoFeatureEn no_feature = _StringsStringsNoFeatureEn._(_root);
+	late final _StringsStringsDashboardEn dashboard = _StringsStringsDashboardEn._(_root);
+	late final _StringsStringsCreateOrderEn create_order = _StringsStringsCreateOrderEn._(_root);
 }
 
 // Path: strings.login
@@ -96,8 +100,14 @@ class _StringsStringsFormEn {
 	final _StringsEn _root; // ignore: unused_field
 
 	// Translations
+	late final _StringsStringsFormPhoneEn phone = _StringsStringsFormPhoneEn._(_root);
 	late final _StringsStringsFormUsernameEn username = _StringsStringsFormUsernameEn._(_root);
 	late final _StringsStringsFormPasswordEn password = _StringsStringsFormPasswordEn._(_root);
+	late final _StringsStringsFormFullNameEn full_name = _StringsStringsFormFullNameEn._(_root);
+	late final _StringsStringsFormTransferAddressEn transfer_address = _StringsStringsFormTransferAddressEn._(_root);
+	late final _StringsStringsFormProductNameEn product_name = _StringsStringsFormProductNameEn._(_root);
+	late final _StringsStringsFormUnitPriceEn unit_price = _StringsStringsFormUnitPriceEn._(_root);
+	late final _StringsStringsFormDeliveryChargesEn delivery_charges = _StringsStringsFormDeliveryChargesEn._(_root);
 }
 
 // Path: strings.errors
@@ -109,6 +119,7 @@ class _StringsStringsErrorsEn {
 	// Translations
 	late final _StringsStringsErrorsFormEn form = _StringsStringsErrorsFormEn._(_root);
 	late final _StringsStringsErrorsOthersEn others = _StringsStringsErrorsOthersEn._(_root);
+	late final _StringsStringsErrorsLoginEn login = _StringsStringsErrorsLoginEn._(_root);
 }
 
 // Path: strings.file_picker
@@ -132,6 +143,37 @@ class _StringsStringsNoFeatureEn {
 	String get in_progress => 'Function in progress';
 }
 
+// Path: strings.dashboard
+class _StringsStringsDashboardEn {
+	_StringsStringsDashboardEn._(this._root);
+
+	final _StringsEn _root; // ignore: unused_field
+
+	// Translations
+	String get greeting => 'Welcome, Silvia';
+	String get how_you_feel => 'Now, how do you feel?';
+	String get description => 'Describe the problem';
+	String get info_problem => 'What information is available?';
+	String get hint_write => 'Write something...';
+}
+
+// Path: strings.create_order
+class _StringsStringsCreateOrderEn {
+	_StringsStringsCreateOrderEn._(this._root);
+
+	final _StringsEn _root; // ignore: unused_field
+
+	// Translations
+	String get title => 'Tạo đơn hàng';
+	String get text_information_customer => 'Thông tin khách hàng';
+	String get text_information_order => 'Thông tin đơn hàng';
+	String get text_continue => 'Tiếp tục';
+	String get text_quantity => 'Số lượng';
+	String get text_price => 'Thành tiền:';
+	String get text_total_price => 'Cộng tiền hàng:';
+	String get text_delivery_charges => 'Phí giao hàng:';
+}
+
 // Path: strings.navigation.bottom
 class _StringsStringsNavigationBottomEn {
 	_StringsStringsNavigationBottomEn._(this._root);
@@ -140,8 +182,20 @@ class _StringsStringsNavigationBottomEn {
 
 	// Translations
 	String get sample => 'Sample';
+	String get home => 'Home';
 	String get features => 'Features';
 	String get informations => 'Informations';
+}
+
+// Path: strings.form.phone
+class _StringsStringsFormPhoneEn {
+	_StringsStringsFormPhoneEn._(this._root);
+
+	final _StringsEn _root; // ignore: unused_field
+
+	// Translations
+	String get label => 'Số điện thoại';
+	String get hint => 'Nhập số điện thoại';
 }
 
 // Path: strings.form.username
@@ -152,7 +206,7 @@ class _StringsStringsFormUsernameEn {
 
 	// Translations
 	String get label => 'Username';
-	String get hint => 'Enter your username';
+	String get hint => 'Vui lòng nhập username';
 }
 
 // Path: strings.form.password
@@ -162,8 +216,63 @@ class _StringsStringsFormPasswordEn {
 	final _StringsEn _root; // ignore: unused_field
 
 	// Translations
-	String get label => 'Password';
-	String get hint => 'Enter your password';
+	String get label => 'Mật khẩu';
+	String get hint => 'Nhập mật khẩu';
+}
+
+// Path: strings.form.full_name
+class _StringsStringsFormFullNameEn {
+	_StringsStringsFormFullNameEn._(this._root);
+
+	final _StringsEn _root; // ignore: unused_field
+
+	// Translations
+	String get label => 'Họ và tên';
+	String get hint => 'Nhập Họ và tên';
+}
+
+// Path: strings.form.transfer_address
+class _StringsStringsFormTransferAddressEn {
+	_StringsStringsFormTransferAddressEn._(this._root);
+
+	final _StringsEn _root; // ignore: unused_field
+
+	// Translations
+	String get label => 'Địa chỉ giao hàng';
+	String get hint => 'Nhập Địa chỉ giao hàng';
+}
+
+// Path: strings.form.product_name
+class _StringsStringsFormProductNameEn {
+	_StringsStringsFormProductNameEn._(this._root);
+
+	final _StringsEn _root; // ignore: unused_field
+
+	// Translations
+	String get label => 'Tên sản phẩm';
+	String get hint => 'Nhập Tên sản phẩm';
+}
+
+// Path: strings.form.unit_price
+class _StringsStringsFormUnitPriceEn {
+	_StringsStringsFormUnitPriceEn._(this._root);
+
+	final _StringsEn _root; // ignore: unused_field
+
+	// Translations
+	String get label => 'Đơn giá';
+	String get hint => 'Đơn giá';
+}
+
+// Path: strings.form.delivery_charges
+class _StringsStringsFormDeliveryChargesEn {
+	_StringsStringsFormDeliveryChargesEn._(this._root);
+
+	final _StringsEn _root; // ignore: unused_field
+
+	// Translations
+	String get label => 'Phí giao hàng';
+	String get hint => 'Nhập Phí giao hàng';
 }
 
 // Path: strings.errors.form
@@ -173,10 +282,11 @@ class _StringsStringsErrorsFormEn {
 	final _StringsEn _root; // ignore: unused_field
 
 	// Translations
-	String maxLength({required Object field, required Object count}) => '${field} cannot be more than ${count} characters.';
-	String minLength({required Object field, required Object count}) => '${field} cannot be less than ${count} characters.';
-	String required({required Object field}) => '${field} is required.';
-	String get email => 'You entered an invalid email address.';
+	String maxLength({required Object field, required Object count}) => '${field} không thể nhiều hơn ${count} ký tự.';
+	String minLength({required Object field, required Object count}) => '${field} không thể ít hơn ${count} ký tự.';
+	String required({required Object field}) => 'Vui lòng nhập ${field}';
+	String get email => 'Địa chỉ Email không hợp lệ.';
+	String pattern({required Object field}) => '${field} không hợp lệ.';
 }
 
 // Path: strings.errors.others
@@ -192,4 +302,16 @@ class _StringsStringsErrorsOthersEn {
 	String get no_internet_connection => 'Internet connectivity is not available.';
 	String get server_failure => 'Server failure encountered.';
 	String get communication_error => 'There was an error with our communication with the servers.';
+}
+
+// Path: strings.errors.login
+class _StringsStringsErrorsLoginEn {
+	_StringsStringsErrorsLoginEn._(this._root);
+
+	final _StringsEn _root; // ignore: unused_field
+
+	// Translations
+	String get E_USER_ACCOUNT_NOT_EXISTS => 'Vui lòng kiểm tra lại mật khẩu';
+	String get E_USER_HAS_BLOCKED => 'User đã bị khoá';
+	String get E_USER_NOT_EXISTS => 'User không tồn tại';
 }

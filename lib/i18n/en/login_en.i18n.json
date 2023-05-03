@@ -1,3 +1,5 @@
 {
-  "login_button": "Login"
+  "text_login": "Login",
+  "need_help": "Need help?",
+  "forget_password": "Forgot Password"
 }
